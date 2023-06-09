@@ -63,7 +63,7 @@ function scrollToNextElement() {
        left: scrollOffset,
        behavior: 'smooth',
      });
-   }
+   } 
  }
 
  function scrollToPreviousElement() {
@@ -91,9 +91,14 @@ function getVisibleElement(container) {
  
      // Check if the child element is visible
      if (rect.left >= 0 && rect.right <= window.innerWidth) {
+    /*   prevButton.disabled = i === 0;
+      nextButton.disabled = i === children.length - 1; */
+  
        return child;
      }
    }
+     // Return the first child if no visible element is found
+  return children[0];
 }
 
 
