@@ -1,0 +1,162 @@
+//import Variable & Mixin
+@use 'global' as * ;
+@use 'mixin' as * ;
+//import Variable & Mixin
+
+header {
+    margin-bottom: -5rem;
+    border-bottom: 1px solid $primary-color;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    backdrop-filter: blur(12px);
+    .navBar {
+        max-width: $max-width;
+        @media (max-width: $max-width) {
+            padding-inline: 1.2rem;
+          }
+        .logo h1{
+            font-weight: 100;
+        }
+        padding: .7rem 0 ;
+        margin-inline: auto;
+        @include flex(1, row, space-between, center, nowrap);
+        .nav{
+            max-width: $max-width;
+            position: reletive;
+        .navButton {
+            background-color: #00000000;
+            overflow-x: hidden;
+            border: none;
+            width: 2.4rem;
+            height: 3rem;
+            @include flexCenter();
+            .line {
+                width: 100%;
+                border-radius: 10px;
+                height: 1px;
+                background-color:$primary-color;
+                position: relative;
+                transition-duration: 0.3s;
+                transition-timing-function: ease-out;
+            }
+        
+            .line::before,
+            .line::after {
+            width: 100%;
+            border-radius: 5px;
+            height: 100%;
+            background-color: $primary-color;
+            position: absolute;
+            content: "";
+            transition-duration: .3s;
+            transition-timing-function: ease-out;
+            }
+            .line::before {
+            transform: translateY(10px);
+            left: 0;
+            }
+            .line::after{
+            transform: translateY(-10px);
+            left: 0;
+            }
+        
+        }
+        
+        /* navutton animation */ 
+        .navButton.open .line {
+            transform: translateX(-30px);
+            background: transparent;
+        }
+        .navButton.open .line::before {
+            transform: rotate(45deg);
+            left: 30px;
+        }
+        .navButton.open .line::after {
+            transform: rotate(-45deg);
+            left: 30px;
+        }
+    }
+
+    .menuContainr{
+            width: 100%;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            overflow-x: hidden;
+            transition-duration: .3s;
+            animation-timing-function: ease-out;
+            transform: translateX(100%);
+        .menu {
+            margin-inline: auto;
+            max-width: $max-width;
+            row-gap: 1rem;
+            display: flex;
+            justify-content: end;
+            .linksContainerMenu{
+            background-color:  #000;
+            padding: 1rem;
+            border: 1px solid #000;
+            display: flex;
+            flex-direction: column;
+            width: 350px;
+            position: relative;
+            a {
+                font-size: 1.4rem;
+                padding: 1rem 0;
+                align-self: end;
+                text-decoration: none;
+                line-height: 2rem;
+                color: $primary-background;
+                border-bottom: 1px solid $primary-background;
+                width: 200px;
+                transition-duration: .4s;
+                letter-spacing: $letterSpacing;
+            }
+
+            a:hover {
+                padding-left: 2rem;
+            }
+
+            a:last-child {
+                border-bottom: none;
+                cursor:pointer;
+                padding-left: 0;
+            }
+           }
+           .linksContainerMenu:after {
+            position: absolute;
+            content: "";
+            background-image: url('../icons/arrow-right.svg');
+            background-size: contain;
+            width: 50px;
+            height: 50px;
+            bottom: 2rem;
+            left: 1rem;
+            transform: translateY(-50%);
+            transform: rotate(-45deg);
+           }
+ 
+        }
+  
+    }
+
+    .menuContainerOpen {
+        transform: translateX(0);
+    }
+    
+  
+        /* nav */ 
+        
+        /* mixin animation for nav  */
+        
+        @mixin iconAnimation {
+            transform: scale(1.1);
+            transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+            
+        }
+        
+        /* mixin animation for nav  */
+    }
+}

@@ -1,0 +1,195 @@
+//import 
+@use 'mixin' as * ;
+@use 'stylingMix' as * ;
+@use 'global' as *;
+@forward 'header';
+@forward 'footer';
+
+//Pages 
+@forward 'impressum';
+@forward 'referenc';
+
+//import 
+
+//Global values 
+*{
+    font-family: helvetica;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 200;
+    color: $primary-color;
+
+}
+
+body {
+    font-family: $primary-font;
+    background-color: $primary-background;
+    position: relative;
+    /* cursor: none; */
+    scroll-behavior: smooth;
+    overscroll-behavior: none;
+
+    main {
+        min-height: 100vh;
+        .hero {
+            overflow-y: hidden;
+            padding-bottom: $section-padding;
+              background-image: url('../img/heroImg/dorian-mongel-5Rgr_zI7pBw-unsplash.jpg');
+            background-attachment: fixed;
+            background-position-x: center;
+            background-position-y: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 800px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            position: relative;
+            z-index: 5;
+            .heroBlur {
+                width: 100%;
+                height: 120%;
+                position: absolute;
+                z-index: 7;
+            }
+           .heroTitleContainer {
+         /*  background-image: url('../img/heroImg/optma-min.png');  */
+         
+            background-size:contain;
+            background-repeat: no-repeat;
+            background-position: center left;
+            width: 100%;
+            max-width: $max-width;
+            margin-inline: auto;
+            height: 330px;
+            z-index: 8;
+            .angebotsSatzOben {
+                @include primeryButtonDark ;
+
+                .titleHighlight {
+                    font-size: 2.8rem;
+                 }
+             
+                  h1 {
+                     color: #fff;
+                     font-size: 2rem;
+
+                  }
+           
+             }
+           }
+
+
+
+        }
+
+        .outContainer {
+            max-width: $max-width;
+            margin-inline: auto;
+            @media (max-width: $max-width) {
+                padding-inline: 1.2rem;
+              }
+        }
+
+
+        .infosSContainer {
+            padding: $section-paddingL 0;
+            display: flex;
+            flex-direction: column;
+            row-gap: 3rem;
+            h1 {
+                @include titleLarg($primary-color);
+                line-height: 1.5;
+                
+                span {
+                    @include titleMedium($primary-color);
+                    line-height: 1.5;
+                    display: inline-block;
+                }
+               /*  text-align: center; */
+            }
+            .infosS {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap-reverse;
+                row-gap: $spacing-larg;
+                column-gap: 3rem;
+                div {
+                    border-top: 1px solid $primary-color;
+                    display: flex;
+                    flex-direction: column;
+                    width: 300px;
+                    row-gap: 3rem;
+                    align-items: center;
+                    justify-content: start;
+                    padding-top: 3rem;
+        
+                    .iconForInfos {
+                        position: relative;
+                        z-index: 4;
+                        width: 70px;
+                        img {
+                            position: relative;
+                            width: 70PX;
+                           z-index: 4;
+                        }
+                    }
+                    .iconForInfos:after {
+                        @include icon-background($primary-color);
+                    }
+
+                    p{
+                        @include icon-description($primary-color);
+                        max-width: 20ch;
+                        max-width: 300px;
+                        text-align: center;
+                        z-index: 3;
+                    }
+    
+                }
+            }
+        }
+
+
+        .imageTextOutContainer {
+            margin-top: $spacing-larg;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            .textImgContainer {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+    
+             .textContainer {
+                min-width: 40%;
+                max-width: 60ch;
+                h2 {
+                   /*  @include titleSmall($primary-color); */
+                   @include titleMedium($primary-color)
+                }
+                p {
+                    font-weight: 200;
+                }
+             }
+
+             .imgContainer {
+                min-width: 40%;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+             }
+      
+            } 
+        }
+    }
+    
+}
+
+
+
+
+
+

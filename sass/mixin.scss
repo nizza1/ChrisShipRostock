@@ -1,0 +1,46 @@
+@use 'global' as *;
+@mixin flex($flex: 1, $direction: row, $justify: center, $align: center, $wrap: wrap) {
+    display: flex;
+    flex: $flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+  }
+
+@mixin flexCenter($justify: center, $align: center){
+    display: flex;
+    justify-content:$justify ;
+    align-items: $align;
+  }
+
+@mixin blur($blur) {
+    backdrop-filter: blur($blur);
+}
+
+@mixin blurS {
+    backdrop-filter: blur(10px);
+}
+
+@mixin standardCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin boxShadow {
+    box-shadow:  11px 11px 22px #c0c0c0,
+             -11px -11px 22px #ffffff;
+}
+
+@mixin title {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: $font-light;
+}
+
+@mixin titleL {
+    font-size: 2rem;
+    font-weight: 300;
+    color: $font-light;
+}

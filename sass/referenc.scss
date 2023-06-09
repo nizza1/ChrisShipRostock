@@ -1,0 +1,136 @@
+@use 'global' as * ;
+@use 'mixin' as * ;
+@use 'stylingMix' as * ;
+
+
+.referencPage {
+    margin: 7rem 0 0 0;
+    position: relative;
+
+    .referencMenu {
+    
+            .radio-inputs {
+                z-index: 5;
+                /* border-bottom: 1px solid $primary-color; */
+      
+                position: sticky;
+                top: 70px;
+                margin: 1rem 0;
+                flex-wrap: wrap;
+                display: flex;
+                background-color: $primary-background;
+               
+                padding: .5rem;
+                .radio:last-of-type {
+          
+                }
+                .radio {
+                    flex: 1 1 auto;
+                    text-align: center;
+                    color: $primary-color;
+              /*       border-right: $primery-border; */
+                    input {
+                        display: none;
+                    }
+
+                      input:checked + .name {
+                        transform: translateY(.2rem);
+                      }
+                    
+                      input:checked + .name:after {
+                        position: absolute;
+                        bottom: 0;
+                        content: '';
+                        text-align: start;
+                        height: 2px ;
+                        border-radius: 1rem;
+                        width: 100%;
+                        background-color: $color-highlight;
+                      }
+
+                    .name {
+                        color: $primary-color;
+                        position: relative;
+                        display: flex;
+                        cursor: pointer;
+                        align-items: center;
+                        justify-content: center;
+                        border: none;
+                        padding: .9rem 0;
+                        transition: all .15s ease-in-out;
+                      }
+                  }
+              }
+
+            .displayReference {
+               margin-top: 2rem;
+                min-height: 500px;
+                padding:2rem 0;
+                margin-bottom: 6rem;
+                .schiffbauGroup {
+                    
+                }
+
+                .maschienenGroup {
+                    background-color: yellow;
+                    min-height: 200px;
+                }
+
+                .stahlGroup {
+                    background-color: green ;
+                    min-height: 200px;
+                }
+
+                .gussGroup {
+                    background-color: black;
+                    min-height: 200px;
+                }
+                
+                article {
+                    width: 100%;
+                    display: none;
+    
+                    .referencCard {
+                
+                        .imgSliderWrapper {
+                            width: 400px;
+                            padding: 1rem;
+                            background: aquamarine;
+                            position: relative;
+                            .imgSlider {
+                                column-gap: 1rem;
+                                width: 100%;
+                                display: flex;
+                                padding: 1rem;
+                                background-color: rgb(164, 127, 72);
+                                overflow-x: auto;
+                                scroll-snap-type: x mandatory;
+                                scroll-behavior: smooth;
+                                img {
+                                    flex: 1 0 100%;
+                                    scroll-snap-align: start;
+                                    object-fit: cover;
+                                }
+                            }
+                            .nextButton,
+                            .prevButton {
+                               width: 2rem;
+                               height: 2rem;
+                               position: absolute;
+                               top: 50%;
+                               transform: translateY(-1rem);
+                               border-radius: 50%;
+                           }
+                           .nextButton {
+                               right: 1rem;
+                           }
+                           .prevButton {
+                               left: 1rem;
+                           }
+                        }
+                    }
+                }
+
+            }
+    }
+}

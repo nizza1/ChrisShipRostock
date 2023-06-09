@@ -1,0 +1,22 @@
+@use 'global' as * ;
+@use 'mixin' as * ;
+
+.impressumPage {
+    margin: 9rem 0 0 0;
+    div {
+        padding-bottom: 1.2rem;
+        h2{
+            border-bottom: $primery-border;
+            padding-bottom: .5rem;
+        }
+        h3 {
+            padding: .4rem 0;
+        }
+        p {
+            padding: .3rem 0;
+        }
+        li {
+            padding: .3rem 0;
+        }
+    }
+}

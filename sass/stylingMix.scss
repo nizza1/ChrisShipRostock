@@ -1,0 +1,142 @@
+@use 'mixin' as * ;
+@use 'global' as * ;
+
+
+@mixin primeryButtonDark {
+    button {
+        margin: 4rem 0 2rem 0;
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        outline: none;
+        border: 0;
+        vertical-align: middle;
+        text-decoration: none;
+        background: transparent;
+        padding: 0;
+
+       }
+       
+       button.learn-more {
+        width: 20rem;
+        height: auto;
+       }
+       
+       button.learn-more .circle {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: relative;
+        display: block;
+        margin: 0;
+        width: 3rem;
+        height: 3rem;
+        background: $primary-color;
+        border-radius: 1.625rem;
+       }
+       
+       button.learn-more .circle .icon {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: #fff;
+       }
+       
+       button.learn-more .circle .icon.arrow {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        left: 0.625rem;
+        width: 1.125rem;
+        height: 0.125rem;
+        background: none;
+       }
+       
+       button.learn-more .circle .icon.arrow::before {
+        position: absolute;
+        content: "";
+        top: -0.29rem;
+        right: 0.0625rem;
+        width: 0.625rem;
+        height: 0.625rem;
+        border-top: 0.125rem solid #fff;
+        border-right: 0.125rem solid #fff;
+        transform: rotate(45deg);
+       }
+       
+       button.learn-more .button-text {
+        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: .5rem 0;
+        margin: 0 0 0 1.85rem;
+        color:$primary-color;
+        line-height: 1.6;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        font-weight: 400;
+       }
+       
+       button:hover .circle {
+        width: 100%;
+       }
+       
+       button:hover .circle .icon.arrow {
+        background: $primary-background;
+        transform: translate(1rem, 0);
+       }
+
+       button:hover .button-text {
+        color: $primary-background;
+       }
+}
+
+@mixin titleLarg ($color) {
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: $color;
+}
+
+@mixin titleMedium ($color) {
+    font-size: 3rem;
+    font-weight: 400;
+    color: $color;
+}
+
+@mixin titleSmall ($color) {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: $color;
+}
+
+@mixin topBorder {
+    border-top: 1px solid $primary-color;
+    padding-top: 2rem;
+}
+
+
+
+@mixin icon-description ($color) {
+    font-size: 2rem;
+    font-weight: 200;
+    color: $color;
+} 
+
+@mixin icon-background ($color) {
+    position: absolute;
+    content: '';
+    width: 45px;
+    height: 45px;
+    top: -20px;
+    right: 50%;
+    background-color: $color;
+    z-index: 1;
+    border-radius: 50%;
+/*     background: rgb(52,65,255);
+background: linear-gradient(180deg, rgba(52,65,255,1) 10%, rgba(0,0,237,0.5984987745098039) 100%); */
+background-color: $color-highlight;
+}
+
+
