@@ -43,7 +43,7 @@ document.addEventListener('mousemove', (e)=> {
 /* Background animation hero */
 
 //Slider Global 
-const imgSliderWrapper = document.querySelector('.imgSliderWrapper');
+
 const imgSlider = document.querySelector('.imgSlider');
 const nextButton = document.querySelector('.nextButton');
 const prevButton = document.querySelector('.prevButton');
@@ -63,7 +63,12 @@ function scrollToNextElement() {
        left: scrollOffset,
        behavior: 'smooth',
      });
-   } 
+   } else {
+    imgSlider.scroll({
+      left: 0,
+      behavior: 'smooth',
+    });
+   }
  }
 
  function scrollToPreviousElement() {
@@ -91,9 +96,6 @@ function getVisibleElement(container) {
  
      // Check if the child element is visible
      if (rect.left >= 0 && rect.right <= window.innerWidth) {
-    /*   prevButton.disabled = i === 0;
-      nextButton.disabled = i === children.length - 1; */
-  
        return child;
      }
    }
