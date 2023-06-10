@@ -43,67 +43,77 @@ document.addEventListener('mousemove', (e)=> {
 /* Background animation hero */
 
 //Slider Global 
+const sliderContainers = document.querySelectorAll('.imgSliderWrapper');
 
-const imgSlider = document.querySelector('.imgSlider');
-const nextButton = document.querySelector('.nextButton');
-const prevButton = document.querySelector('.prevButton');
+// Loop through each slider container and set up the functionality
+sliderContainers.forEach((sliderContainer) => {
+  const nextButton = sliderContainer.querySelector('.nextButton');
+  const prevButton = sliderContainer.querySelector('.prevButton');
+  const imgSlider = sliderContainer.querySelector('.imgSlider');
 
-nextButton.addEventListener('click', scrollToNextElement );
-prevButton.addEventListener('click', scrollToPreviousElement);
+  nextButton.addEventListener('click', scrollToNextElement);
+  prevButton.addEventListener('click', scrollToPreviousElement);
+  imgSlider.addEventListener('scroll', updatePrevButtonOpacity);
 
-function scrollToNextElement() {
-   // Get the currently visible element inside the container
-   const visibleElement = getVisibleElement(imgSlider);
-
-   // Calculate the next element's scroll position relative to the container
-   const nextElement = visibleElement.nextElementSibling;
-   if (nextElement) {
-     const scrollOffset = nextElement.offsetLeft - imgSlider.offsetLeft;
-     imgSlider.scroll({
-       left: scrollOffset,
-       behavior: 'smooth',
-     });
-   } else {
-    imgSlider.scroll({
-      left: 0,
-      behavior: 'smooth',
-    });
-   }
- }
-
- function scrollToPreviousElement() {
-   // Get the currently visible element inside the container
-   const visibleElement = getVisibleElement(imgSlider);
-
-   const previousElement = visibleElement.previousElementSibling;
-  if (previousElement) {
-    const scrollOffset = previousElement.offsetLeft - imgSlider.offsetLeft;
-    imgSlider.scroll({
-      left: scrollOffset,
-      behavior: 'smooth',
-    });
+  function scrollToNextElement() {
+    // Get the currently visible element inside the container
+    const visibleElement = getVisibleElement(imgSlider);
+    // Calculate the next element's scroll position relative to the container
+    const nextElement = visibleElement.nextElementSibling;
+    if (nextElement) {
+      const scrollOffset = nextElement.offsetLeft - imgSlider.offsetLeft;
+      imgSlider.scroll({
+        left: scrollOffset,
+        /* behavior: 'smooth', */
+      });
+    } else {
+      imgSlider.scroll({
+        left: 0,
+        behavior: 'smooth',
+      });
+    }
   }
- }
- 
-function getVisibleElement(container) {
-   // Get all the child elements of the container
-   const children = container.children;
- 
-   // Loop through the child elements and find the one that is currently visible
-   for (let i = 0; i < children.length; i++) {
-     const child = children[i];
-     const rect = child.getBoundingClientRect();
- 
-     // Check if the child element is visible
-     if (rect.left >= 0 && rect.right <= window.innerWidth) {
-       return child;
-     }
-   }
-     // Return the first child if no visible element is found
-  return children[0];
-}
 
+  function scrollToPreviousElement() {
+    // Get the currently visible element inside the container
+    const visibleElement = getVisibleElement(imgSlider);
 
+    const previousElement = visibleElement.previousElementSibling;
+    if (previousElement) {
+      const scrollOffset = previousElement.offsetLeft - imgSlider.offsetLeft;
+      imgSlider.scroll({
+        left: scrollOffset,
+        behavior: 'smooth',
+      });
+    }
+  }
+
+  function getVisibleElement(container) {
+    // Get all the child elements of the container
+    const children = container.children;
+    // Loop through the child elements and find the one that is currently visible
+    for (let i = 0; i < children.length; i++) {
+      const child = children[i];
+      const rect = child.getBoundingClientRect();
+
+      // Check if the child element is visible
+      if (rect.left >= 0 && rect.right <= window.innerWidth) {
+        return child;
+      }
+    }
+    // Return the first child if no visible element is found
+    return children[0];
+  }
+
+  function updatePrevButtonOpacity() {
+    // Check if the first image is visible
+    const isFirstImageVisible = getVisibleElement(imgSlider) === imgSlider.firstElementChild;
+    // Set the opacity of the previous button
+    prevButton.style.opacity = isFirstImageVisible ? '0.1' : '0.7';
+  }
+
+  updatePrevButtonOpacity();
+});
 //Slider Global 
 
 
