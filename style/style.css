@@ -36,7 +36,6 @@ header .navBar .nav {
 }
 header .navBar .nav .navButton {
   background-color: rgba(0, 0, 0, 0);
-  overflow-x: hidden;
   border: none;
   width: 2.4rem;
   height: 3rem;
@@ -247,6 +246,19 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   background-color: #424242;
 }
 
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
 .impressumPage {
   margin: 9rem 0 0 0;
 }
@@ -338,21 +350,20 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   display: none;
 }
 .referencPage .referencMenu .displayReference article .referencCard .imgSliderWrapper {
-  width: 380px;
-  height: 320px;
+  width: 300px;
+  height: 220px;
   position: relative;
   overflow: hidden;
   border-radius: 2rem;
   margin-bottom: 3rem;
 }
 .referencPage .referencMenu .displayReference article .referencCard .imgSliderWrapper .imgSlider {
-  column-gap: 1.5rem;
+  column-gap: 1rem;
   width: 100%;
   height: 100%;
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  /* aspect-ratio: 16/16; */
   scroll-behavior: smooth;
   /*  scroll-padding-inline: 1rem; */
   scrollbar-width: none;
@@ -370,21 +381,22 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
 }
 .referencPage .referencMenu .displayReference article .referencCard .imgSliderWrapper .nextButton,
 .referencPage .referencMenu .displayReference article .referencCard .imgSliderWrapper .prevButton {
-  width: 3rem;
-  height: 3rem;
+  width: 2.4rem;
+  height: 2.4rem;
   position: absolute;
   top: 50%;
-  transform: translateY(-1.5rem);
+  transform: translateY(-1.2rem);
   border: none;
   background: none;
   opacity: 0.7;
   transition-duration: 0.3s;
+  border-radius: 50%;
 }
 .referencPage .referencMenu .displayReference article .referencCard .imgSliderWrapper .nextButton img,
 .referencPage .referencMenu .displayReference article .referencCard .imgSliderWrapper .prevButton img {
   width: 100%;
-  background-color: #E2E2E2;
   border-radius: 50%;
+  background-color: #E2E2E2;
 }
 .referencPage .referencMenu .displayReference article .referencCard .imgSliderWrapper .nextButton {
   right: 1.4rem;

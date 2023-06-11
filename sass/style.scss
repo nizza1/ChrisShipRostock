@@ -4,6 +4,7 @@
 @use 'global' as *;
 @forward 'header';
 @forward 'footer';
+@forward 'preLoader';
 
 //Pages 
 @forward 'impressum';

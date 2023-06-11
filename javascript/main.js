@@ -1,3 +1,29 @@
+
+//preLoader
+window.addEventListener('load', function() {
+  const preloader = document.querySelector('.preloader');
+  const loader = document.querySelector('.loader');
+  
+  // Load local JSON file
+  fetch('../icons/preLoader/pre.json')
+    .then(response => response.json())
+    .then(data => {
+      // Process the JSON data here
+      console.log(data);
+      
+      // Hide the preloader
+      preloader.style.display = 'none';
+    })
+    .catch(error => {
+      console.error('Error loading JSON file:', error);
+      
+      // Hide the preloader even if there was an error
+      preloader.style.display = 'none';
+    });
+});
+//preLoader
+
+
 /* nav */
 const navButton = document.querySelector('.navButton');
 
