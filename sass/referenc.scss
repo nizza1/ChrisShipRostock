@@ -85,11 +85,9 @@
                     background-color: black;
                     min-height: 200px;
                 }
-                
                 article {
                     width: 100%;
                     display: none;
-    
                     .referencCard {
                 
                         .imgSliderWrapper {
@@ -151,6 +149,9 @@
                            }
                         }
                     }
+                }
+                article:first-of-type{
+                    display: block;
                 }
 
             }

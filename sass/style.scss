@@ -2,9 +2,11 @@
 @use 'mixin' as * ;
 @use 'stylingMix' as * ;
 @use 'global' as *;
+@forward 'preLoader';
 @forward 'header';
 @forward 'footer';
-@forward 'preLoader';
+
+
 
 //Pages 
 @forward 'impressum';
@@ -30,6 +32,7 @@ body {
     /* cursor: none; */
     scroll-behavior: smooth;
     overscroll-behavior: none;
+    overflow-x: hidden;
 
     main {
         min-height: 100vh;

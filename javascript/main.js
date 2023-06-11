@@ -1,27 +1,9 @@
-
 //preLoader
 window.addEventListener('load', function() {
-  const preloader = document.querySelector('.preloader');
-  const loader = document.querySelector('.loader');
-  
-  // Load local JSON file
-  fetch('../icons/preLoader/pre.json')
-    .then(response => response.json())
-    .then(data => {
-      // Process the JSON data here
-      console.log(data);
-      
-      // Hide the preloader
-      preloader.style.display = 'none';
-    })
-    .catch(error => {
-      console.error('Error loading JSON file:', error);
-      
-      // Hide the preloader even if there was an error
-      preloader.style.display = 'none';
-    });
+  const preloader = document.querySelector('.preLoader');
+  preloader.style.display = 'none';
 });
-//preLoader
+//preLoaderm
 
 
 /* nav */
@@ -152,7 +134,7 @@ const radios = document.querySelectorAll('.radio-inputs input[type="radio"]');
 const articles = document.querySelectorAll('.displayReference article');
 
 // Show the first article by default
-articles[0].style.display = 'block';
+/* articles[0].style.display = 'block'; */
 
 
 radios.forEach(radio => {
