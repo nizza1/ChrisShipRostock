@@ -3,23 +3,43 @@
 @use 'stylingMix' as * ;
 
 
-.referencPage {
-    margin: 7rem 0 0 0;
-    position: relative;
+.referecePageBackround {
+  /*   margin-top: 60px; */
+    background-image: url('../img/referenceBackground-min.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    padding-top: 4rem;
+    div {
+        border-top: 1px solid $primary-background;
+        width: 100%;
+        h1 {
+            @include titleXXL($primary-background);
+            letter-spacing: .4rem;
 
+        }
+    }
+
+}
+
+.referencPage {
+    margin: 0 0 0 0;
+    position: relative;
     .referencMenu {
-    
             .radio-inputs {
                 z-index: 5;
                 /* border-bottom: 1px solid $primary-color; */
-      
                 position: sticky;
                 top: 70px;
                 margin: 1rem 0;
                 flex-wrap: wrap;
                 display: flex;
                 background-color: $primary-background;
-               
+             
+                gap: 1rem;
                 padding: .5rem;
                 .radio:last-of-type {
           
@@ -49,6 +69,7 @@
                       }
 
                     .name {
+                        letter-spacing: .1rem;
                         color: $primary-color;
                         position: relative;
                         display: flex;

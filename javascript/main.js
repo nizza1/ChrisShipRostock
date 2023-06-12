@@ -59,6 +59,7 @@ sliderContainers.forEach((sliderContainer) => {
   const prevButton = sliderContainer.querySelector('.prevButton');
   const imgSlider = sliderContainer.querySelector('.imgSlider');
 
+
   nextButton.addEventListener('click', scrollToNextElement);
   prevButton.addEventListener('click', scrollToPreviousElement);
   imgSlider.addEventListener('scroll', updatePrevButtonOpacity);
@@ -99,6 +100,8 @@ sliderContainers.forEach((sliderContainer) => {
   function getVisibleElement(container) {
     // Get all the child elements of the container
     const children = container.children;
+    const childrenCount = children.length;
+    hideButtons(childrenCount);
     // Loop through the child elements and find the one that is currently visible
     for (let i = 0; i < children.length; i++) {
       const child = children[i];
@@ -118,6 +121,13 @@ sliderContainers.forEach((sliderContainer) => {
     const isFirstImageVisible = getVisibleElement(imgSlider) === imgSlider.firstElementChild;
     // Set the opacity of the previous button
     prevButton.style.opacity = isFirstImageVisible ? '0.1' : '0.7';
+  }
+  function hideButtons(childrenCount) {
+    if (childrenCount <= 1) {
+      prevButton.style.display = 'none';
+      nextButton.style.display = 'none';
+    } 
+
   }
 
   updatePrevButtonOpacity();

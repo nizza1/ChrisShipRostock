@@ -36,6 +36,7 @@ header {
   width: 100%;
   z-index: 100;
   backdrop-filter: blur(12px);
+  background-color: rgba(255, 255, 255, 0.1254901961);
 }
 header .navBar {
   max-width: 1100px;
@@ -296,8 +297,30 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   padding: 0.3rem 0;
 }
 
+.referecePageBackround {
+  /*   margin-top: 60px; */
+  background-image: url("../img/referenceBackground-min.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  padding-top: 4rem;
+}
+.referecePageBackround div {
+  border-top: 1px solid #E2E2E2;
+  width: 100%;
+}
+.referecePageBackround div h1 {
+  font-size: 5rem;
+  font-weight: 500;
+  color: #E2E2E2;
+  letter-spacing: 0.4rem;
+}
+
 .referencPage {
-  margin: 7rem 0 0 0;
+  margin: 0 0 0 0;
   position: relative;
 }
 .referencPage .referencMenu .radio-inputs {
@@ -309,6 +332,7 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   flex-wrap: wrap;
   display: flex;
   background-color: #E2E2E2;
+  gap: 1rem;
   padding: 0.5rem;
 }
 .referencPage .referencMenu .radio-inputs .radio {
@@ -334,6 +358,7 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   background-color: #002AFF;
 }
 .referencPage .referencMenu .radio-inputs .radio .name {
+  letter-spacing: 0.1rem;
   color: #000000;
   position: relative;
   display: flex;
@@ -575,7 +600,9 @@ body main .hero .heroTitleContainer .angebotsSatzOben button:hover .button-text 
   color: #E2E2E2;
 }
 body main .hero .heroTitleContainer .angebotsSatzOben .titleHighlight {
-  font-size: 2.8rem;
+  font-size: 4rem;
+  font-weight: 500;
+  color: #E2E2E2;
 }
 body main .hero .heroTitleContainer .angebotsSatzOben h1 {
   color: #fff;
@@ -597,7 +624,7 @@ body main .infosSContainer {
   row-gap: 3rem;
 }
 body main .infosSContainer h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 300;
   color: #000000;
   line-height: 1.5;
@@ -612,7 +639,7 @@ body main .infosSContainer h1 span {
 }
 body main .infosSContainer .infosS {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap-reverse;
   row-gap: 4rem;
   column-gap: 3rem;
@@ -623,7 +650,7 @@ body main .infosSContainer .infosS div {
   flex-direction: column;
   width: 300px;
   row-gap: 3rem;
-  align-items: center;
+  align-items: start;
   justify-content: start;
   padding-top: 3rem;
 }
@@ -655,35 +682,41 @@ body main .infosSContainer .infosS div p {
   color: #000000;
   max-width: 20ch;
   max-width: 300px;
-  text-align: center;
+  /*  text-align: center; */
   z-index: 3;
 }
-body main .imageTextOutContainer {
-  margin-top: 4rem;
+body main .outFull {
+  width: 100vw;
+  background-color: #000000;
+  padding: 4rem 0;
+}
+body main .outFull .imageTextOutContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
 }
-body main .imageTextOutContainer .textImgContainer {
+body main .outFull .imageTextOutContainer .textImgContainer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
-body main .imageTextOutContainer .textImgContainer .textContainer {
+body main .outFull .imageTextOutContainer .textImgContainer .textContainer {
   min-width: 40%;
   max-width: 60ch;
 }
-body main .imageTextOutContainer .textImgContainer .textContainer h2 {
+body main .outFull .imageTextOutContainer .textImgContainer .textContainer h2 {
   /*  @include titleSmall($primary-color); */
   font-size: 3rem;
   font-weight: 400;
-  color: #000000;
+  color: #E2E2E2;
 }
-body main .imageTextOutContainer .textImgContainer .textContainer p {
+body main .outFull .imageTextOutContainer .textImgContainer .textContainer p {
+  font-size: 1.5rem;
   font-weight: 200;
+  color: #E2E2E2;
 }
-body main .imageTextOutContainer .textImgContainer .imgContainer {
+body main .outFull .imageTextOutContainer .textImgContainer .imgContainer {
   min-width: 40%;
   display: flex;
   justify-content: center;

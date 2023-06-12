@@ -74,7 +74,7 @@ body {
                 @include primeryButtonDark ;
 
                 .titleHighlight {
-                    font-size: 2.8rem;
+                    @include titleBold($primary-background);
                  }
              
                   h1 {
@@ -117,7 +117,7 @@ body {
             }
             .infosS {
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
                 flex-wrap: wrap-reverse;
                 row-gap: $spacing-larg;
                 column-gap: 3rem;
@@ -127,7 +127,7 @@ body {
                     flex-direction: column;
                     width: 300px;
                     row-gap: 3rem;
-                    align-items: center;
+                    align-items: start;
                     justify-content: start;
                     padding-top: 3rem;
         
@@ -149,7 +149,7 @@ body {
                         @include icon-description($primary-color);
                         max-width: 20ch;
                         max-width: 300px;
-                        text-align: center;
+                       /*  text-align: center; */
                         z-index: 3;
                     }
     
@@ -157,38 +157,43 @@ body {
             }
         }
 
+        .outFull {
+            width: 100vw;
+            background-color: $primary-color;
+            padding:  $spacing-larg 0;
 
-        .imageTextOutContainer {
-            margin-top: $spacing-larg;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            width: 100%;
-            .textImgContainer {
+            .imageTextOutContainer {
+
                 display: flex;
                 flex-wrap: wrap;
-                width: 100%;
-    
-             .textContainer {
-                min-width: 40%;
-                max-width: 60ch;
-                h2 {
-                   /*  @include titleSmall($primary-color); */
-                   @include titleMedium($primary-color)
-                }
-                p {
-                    font-weight: 200;
-                }
-             }
-
-             .imgContainer {
-                min-width: 40%;
-                display:flex;
                 justify-content: center;
-                align-items: center;
-             }
-      
-            } 
+                width: 100%;
+                .textImgContainer {
+                    display: flex;
+                    flex-wrap: wrap;
+                    width: 100%;
+                 .textContainer {
+                    min-width: 40%;
+                    max-width: 60ch;
+                    h2 {
+                       /*  @include titleSmall($primary-color); */
+                       @include titleMedium($primary-background);
+                    }
+                    p {
+                        @include standardText($primary-background);
+                    }
+                 }
+    
+                 .imgContainer {
+                    min-width: 40%;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                 }
+          
+                } 
+            }
+            
         }
     }
     
