@@ -4,7 +4,7 @@
 
 
 .referecePageBackround {
-  /*   margin-top: 60px; */
+    position: relative;
     background-image: url('../img/referenceBackground-min.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,6 +16,7 @@
     div {
         border-top: 1px solid $primary-background;
         width: 100%;
+        z-index: 4;
         h1 {
             @include titleXXL($primary-background);
             letter-spacing: .4rem;
