@@ -11,7 +11,7 @@ header {
     width: 100%;
     z-index: 100;
     backdrop-filter: blur(12px);
-    background-color: #ffffff20;
+    background-color: #e2e2e26c;
     .navBar {
         max-width: $max-width;
         @media (max-width: $max-width) {
@@ -19,6 +19,7 @@ header {
           }
         .logo h1{
             font-weight: 100;
+            color: $primary-color;
         }
         padding: .7rem 0 ;
         margin-inline: auto;
@@ -27,10 +28,9 @@ header {
             max-width: $max-width;
             position: reletive;
         .navButton {
-            background-color: #00000000;
-            
             border: none;
             width: 2.4rem;
+            background-color: #00000000;
             height: 3rem;
             @include flexCenter();
             .line {
