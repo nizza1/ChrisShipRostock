@@ -1,0 +1,26 @@
+@use 'global' as * ;
+@use 'mixin' as * ;
+@use 'stylingMix' as * ;
+
+
+.LeistungenPageBackround {
+    /*   margin-top: 60px; */
+      background-image: url('../img/leistungenCover.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      min-height: 400px;
+      display: flex;
+      align-items: center;
+      padding-top: 4rem;
+      div {
+          border-top: 1px solid $primary-background;
+          width: 100%;
+          h1 {
+              @include titleXXL($primary-background);
+              letter-spacing: .4rem;
+  
+          }
+      }
+  
+  }

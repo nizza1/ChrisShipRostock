@@ -11,6 +11,7 @@
 //Pages 
 @forward 'impressum';
 @forward 'referenc';
+@forward 'leistungen';
 
 //import 
 /* @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55'); */
@@ -98,7 +99,6 @@ body {
               }
         }
 
-
         .infosSContainer {
             padding: $section-paddingL 0;
             display: flex;
@@ -163,40 +163,53 @@ body {
             padding:  $spacing-larg 0;
 
             .imageTextOutContainer {
-
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 width: 100%;
-                .textImgContainer {
-                    display: flex;
-                    flex-wrap: wrap;
+                .iconsContainerHomeLeistung {
+                    padding-top: $section-padding;
+                   
                     width: 100%;
-                 .textContainer {
-                    min-width: 40%;
-                    max-width: 60ch;
                     h2 {
-                       /*  @include titleSmall($primary-color); */
-                       @include titleMedium($primary-background);
-                    }
-                    p {
-                        @include standardText($primary-background);
-                    }
-                 }
-    
-                 .imgContainer {
-                    min-width: 40%;
-                    display:flex;
-                    justify-content: center;
-                    align-items: center;
-                 }
-          
+                        /*  @include titleSmall($primary-color); */
+                        @include titleMedium($primary-background);
+                        margin-bottom: 2rem;
+                     }
+
+                     .iconsTextContainer {
+
+                        div {
+                            /*  display: flex;
+                             column-gap: 1rem; */
+                             .iconsLeistungen{
+                                 border-top: $primery-border;
+                                 display: flex;
+                                 align-items: center;
+                                 gap: 1.5rem;
+                                 padding-top: 1rem;
+                                 padding-bottom: 1rem;
+                                 .iconL {
+                                     background-color: $color-highlight;
+                                     width: 50px;
+                                     padding: 5px;
+                                 }
+                                 p {
+                                     @include standardText($primary-background);
+                                 }
+         
+                             }
+     
+                          }
+                     }
                 } 
             }
-            
+        }
+
+        .blogHome {
+            min-height: 400px;
         }
     }
-    
 }
 
 

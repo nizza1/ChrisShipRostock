@@ -466,6 +466,28 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   display: block;
 }
 
+.LeistungenPageBackround {
+  /*   margin-top: 60px; */
+  background-image: url("../img/leistungenCover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  padding-top: 4rem;
+}
+.LeistungenPageBackround div {
+  border-top: 1px solid #E2E2E2;
+  width: 100%;
+}
+.LeistungenPageBackround div h1 {
+  font-size: 5rem;
+  font-weight: 500;
+  color: #E2E2E2;
+  letter-spacing: 0.4rem;
+}
+
 /* @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55'); */
 * {
   font-family: "Helvetica Neue", sans-serif;
@@ -696,31 +718,41 @@ body main .outFull .imageTextOutContainer {
   justify-content: center;
   width: 100%;
 }
-body main .outFull .imageTextOutContainer .textImgContainer {
-  display: flex;
-  flex-wrap: wrap;
+body main .outFull .imageTextOutContainer .iconsContainerHomeLeistung {
+  padding-top: 2rem;
   width: 100%;
 }
-body main .outFull .imageTextOutContainer .textImgContainer .textContainer {
-  min-width: 40%;
-  max-width: 60ch;
-}
-body main .outFull .imageTextOutContainer .textImgContainer .textContainer h2 {
+body main .outFull .imageTextOutContainer .iconsContainerHomeLeistung h2 {
   /*  @include titleSmall($primary-color); */
   font-size: 3rem;
   font-weight: 400;
   color: #E2E2E2;
+  margin-bottom: 2rem;
 }
-body main .outFull .imageTextOutContainer .textImgContainer .textContainer p {
+body main .outFull .imageTextOutContainer .iconsContainerHomeLeistung .iconsTextContainer div {
+  /*  display: flex;
+   column-gap: 1rem; */
+}
+body main .outFull .imageTextOutContainer .iconsContainerHomeLeistung .iconsTextContainer div .iconsLeistungen {
+  border-top: 1px solid #c0c0c0;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+body main .outFull .imageTextOutContainer .iconsContainerHomeLeistung .iconsTextContainer div .iconsLeistungen .iconL {
+  background-color: #002AFF;
+  width: 50px;
+  padding: 5px;
+}
+body main .outFull .imageTextOutContainer .iconsContainerHomeLeistung .iconsTextContainer div .iconsLeistungen p {
   font-size: 1.5rem;
   font-weight: 200;
   color: #E2E2E2;
 }
-body main .outFull .imageTextOutContainer .textImgContainer .imgContainer {
-  min-width: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body main .blogHome {
+  min-height: 400px;
 }
 
 /*# sourceMappingURL=style.css.map */
