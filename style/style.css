@@ -542,6 +542,45 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   color: #000000;
 }
 
+.kontktPageBackground {
+  background-image: url("../img/kontaktCover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  padding-top: 4rem;
+  position: relative;
+}
+.kontktPageBackground div {
+  border-top: 1px solid #E2E2E2;
+  width: 100%;
+  z-index: 3;
+}
+.kontktPageBackground div h1 {
+  font-size: 5rem;
+  font-weight: 500;
+  color: #E2E2E2;
+  letter-spacing: 0.4rem;
+}
+
+.backdrop {
+  /*         position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left:0;
+        background: linear-gradient(180deg, rgba(250,251,255,0) 0%, rgba(0,0,0,0.5914959733893557) 62%); */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(250, 251, 255, 0) 0%, rgba(0, 0, 0, 0.654) 62%);
+  z-index: 2;
+}
+
 /* @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55'); */
 * {
   font-family: "Helvetica Neue", sans-serif;
