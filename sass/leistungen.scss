@@ -34,3 +34,36 @@
         @include overlay;
         z-index: 2;
     }
+
+    .leistungenPage {
+        padding-top: $spacing-larg ;
+        article {
+            margin-bottom: $spacing-larg;
+            h1 {
+                @include titleMedium($primary-color);
+                margin-bottom:$spacing-medium;
+            }
+            h2 {
+                margin-bottom: $spacing-medium;
+                font-size: 1.2rem;
+            }
+            .listContainer {
+                border-top: 1px solid #000;
+                padding-top: $spacing-medium;
+
+                div {
+                    padding-bottom: .5rem;
+                    display: flex;
+                    align-items: start;
+                    column-gap: .8rem;
+                    img {
+                        width: 25px;
+                    }
+                    p {
+                        @include standardText($primary-color);
+                    }
+
+                }
+            }
+        }
+    }

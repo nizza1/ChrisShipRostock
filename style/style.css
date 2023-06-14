@@ -507,6 +507,41 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   z-index: 2;
 }
 
+.leistungenPage {
+  padding-top: 4rem;
+}
+.leistungenPage article {
+  margin-bottom: 4rem;
+}
+.leistungenPage article h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 2rem;
+}
+.leistungenPage article h2 {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+.leistungenPage article .listContainer {
+  border-top: 1px solid #000;
+  padding-top: 2rem;
+}
+.leistungenPage article .listContainer div {
+  padding-bottom: 0.5rem;
+  display: flex;
+  align-items: start;
+  column-gap: 0.8rem;
+}
+.leistungenPage article .listContainer div img {
+  width: 25px;
+}
+.leistungenPage article .listContainer div p {
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: #000000;
+}
+
 /* @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55'); */
 * {
   font-family: "Helvetica Neue", sans-serif;
