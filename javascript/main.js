@@ -161,3 +161,30 @@ radios.forEach(radio => {
 
 
 //referencPage 
+
+//animation About Page 
+
+function animateOnScroll() {
+  const items = document.querySelectorAll('.uberUnsPage .activeTime');
+
+  function checkScroll() {
+    items.forEach((item) => {
+      const itemTop = item.getBoundingClientRect().top;
+
+      // Check if the box is in the viewport
+      if (itemTop < window.innerHeight - 180) {
+        item.style.opacity = '1';
+        item.style.transform = 'translateY(0)';
+      } else {
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(50px)';
+      }
+    });
+  }
+  checkScroll();
+  window.addEventListener('scroll', checkScroll);
+}
+
+animateOnScroll();
+
+//animation About Page

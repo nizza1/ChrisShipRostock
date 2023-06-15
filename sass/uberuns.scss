@@ -1,0 +1,73 @@
+@use 'global' as * ;
+@use 'mixin' as * ;
+@use 'stylingMix' as * ;
+
+.uberunsPageBackground {
+    background-image: url('../img/wheelShip.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    padding-top: 4rem;
+    position: relative;
+    div {
+        border-top: 1px solid $primary-background;
+        width: 100%;
+        z-index: 3;
+        h1 {
+            @include titleXXL($primary-background);
+            letter-spacing: .4rem;
+        }
+    }
+  }
+  .backdrop {
+      @include overlay;
+      z-index: 2;
+  }
+
+  .uberUnsPage {
+    padding-top: $spacing-larg;
+    padding-bottom: $spacing-larg;
+    min-height: 400px;
+    article {
+        position: relative;
+        display: flex;
+        align-items: center;
+        column-gap: 2rem;
+        margin-bottom: 2rem;
+        div {
+            position: relative;
+            .activeTime {
+                width: 30px;
+                position: absolute;
+                top: 0;
+                left:0;
+        }
+
+        }
+        img {
+            width: 30px;
+        }
+    }
+  }
+
+  .test {
+    padding: $spacing-larg 0;
+    .continer {
+        height: 400px; /* Adjust the container height as needed */
+        overflow: auto;
+    }
+
+    .box {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+        background-color: #f2f2f2;
+        padding: 20px;
+        margin-bottom: 20px;
+        min-height: 200px;
+        background-color: red;
+      }
+  }
