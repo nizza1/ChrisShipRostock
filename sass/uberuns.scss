@@ -44,30 +44,15 @@
                 position: absolute;
                 top: 0;
                 left:0;
+                transition-duration: .5s;
         }
-
         }
         img {
             width: 30px;
         }
+        h1 {
+            font-size: 3rem;
+        }
     }
   }
 
-  .test {
-    padding: $spacing-larg 0;
-    .continer {
-        height: 400px; /* Adjust the container height as needed */
-        overflow: auto;
-    }
-
-    .box {
-        opacity: 0;
-        transform: translateY(50px);
-        transition: opacity 0.5s ease, transform 0.5s ease;
-        background-color: #f2f2f2;
-        padding: 20px;
-        margin-bottom: 20px;
-        min-height: 200px;
-        background-color: red;
-      }
-  }

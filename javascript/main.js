@@ -172,12 +172,16 @@ function animateOnScroll() {
       const itemTop = item.getBoundingClientRect().top;
 
       // Check if the box is in the viewport
-      if (itemTop < window.innerHeight - 180) {
+      if (itemTop < window.innerHeight - 280) {
         item.style.opacity = '1';
         item.style.transform = 'translateY(0)';
+        item.style.left = '0';
+        item.style.width = '30px';
       } else {
         item.style.opacity = '0';
-        item.style.transform = 'translateY(50px)';
+        item.style.transform = 'translateY(120px)';
+        item.style.left = '15px';
+        item.style.width = '0';
       }
     });
   }
