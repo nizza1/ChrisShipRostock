@@ -167,7 +167,11 @@ radios.forEach(radio => {
 function animateOnScroll() {
   const items = document.querySelectorAll('.uberUnsPage .activeTime');
 
+  const texte = document.querySelectorAll('.uberUnsPage .animatedItmes');
+
   function checkScroll() {
+
+
     items.forEach((item) => {
       const itemTop = item.getBoundingClientRect().top;
 
@@ -177,6 +181,8 @@ function animateOnScroll() {
         item.style.transform = 'translateY(0)';
         item.style.left = '0';
         item.style.width = '30px';
+
+      /*   item.style.color = '#002AFF'; */
       } else {
         item.style.opacity = '0';
         item.style.transform = 'translateY(120px)';
@@ -185,8 +191,24 @@ function animateOnScroll() {
       }
     });
   }
+
+  function changeTextColor() {
+    texte.forEach((text) => {
+      const textTop = text.getBoundingClientRect().top;
+
+      if (textTop < window.innerHeight - 400) {
+        text.classList.add('animatedText')
+      } else {
+        text.classList.remove('animatedText')
+      }
+
+    })
+  }
   checkScroll();
   window.addEventListener('scroll', checkScroll);
+
+  changeTextColor();
+  window.addEventListener('scroll', changeTextColor);
 }
 
 animateOnScroll();
