@@ -36,7 +36,7 @@
         display: flex;
         align-items: center;
         column-gap: 2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 5rem;
         div {
             position: relative;
             .activeTime {
@@ -44,7 +44,8 @@
                 position: absolute;
                 top: 0;
                 left:0;
-                transition-duration: .5s;
+                transition-duration: .4s;
+                transition-timing-function: cubic-bezier(0,.74,.63,1.01);
         }
         }
         img {
@@ -52,6 +53,13 @@
         }
         h1 {
             font-size: 3rem;
+            font-weight: 800;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke:2px #0000001d ;
+            span {
+                font-size: 7rem;
+                font-weight: 900;
+            }
         }
     }
   }
