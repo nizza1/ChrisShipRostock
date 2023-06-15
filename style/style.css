@@ -581,6 +581,36 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   z-index: 2;
 }
 
+.kontaktPage {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.kontaktPage .contactDetails {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+}
+.kontaktPage .contactDetails div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3rem;
+  column-gap: 1rem;
+}
+.kontaktPage .contactDetails div img {
+  width: 40px;
+}
+.kontaktPage .contactDetails div p {
+  font-size: 1.5rem;
+}
+.contactMap {
+  min-height: 400px;
+  background-color: #000000;
+}
+.contactMap iframe {
+  width: 100%;
+}
+
 /* @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55'); */
 * {
   font-family: "Helvetica Neue", sans-serif;
