@@ -46,7 +46,7 @@
                 position: absolute;
                 top: 0;
                 left:0;
-                transition-duration: .4s;
+                transition-duration: .7s;
                 transition-timing-function: cubic-bezier(0,.74,.63,1.01);
         }
         }
@@ -59,7 +59,7 @@
             font-weight: 800;
             -webkit-text-fill-color: transparent;
             -webkit-text-stroke:2px #00000017 ;
-            transition-duration: .4s;
+            transition-duration: .7s;
             transition-timing-function: cubic-bezier(0,.74,.63,1.01);
             span {
                 font-size: 7rem;
