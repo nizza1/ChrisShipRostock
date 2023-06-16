@@ -98,6 +98,33 @@ $cover-text-small-padding :1rem;
         }
         
     }
+    //leistungen
+    .LeistungenPageBackround {
+        div {
+            h1 {
+                font-size: $cover-text-small;
+                padding-top: $cover-text-small-padding;
+            }
+        }
+    }
+    .leistungenPage {
+        article {
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.2rem;
+
+            }
+            .listContainer {
+
+            }
+        }
+    }
+
+
+
+
 
 
 
