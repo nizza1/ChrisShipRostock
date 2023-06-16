@@ -729,6 +729,16 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
     margin-inline: auto;
     margin: 1rem 0;
   }
+  .kontktPageBackground div h1 {
+    padding-top: 1rem;
+    font-size: 3rem;
+  }
+  .kontaktPage .contactDetails div img {
+    width: 35px;
+  }
+  .kontaktPage .contactDetails div p {
+    font-size: 1.2rem;
+  }
 }
 /* @media (min-width: $mq-desktop) {
     :root {

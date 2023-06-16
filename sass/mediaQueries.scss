@@ -64,8 +64,6 @@ $cover-text-small-padding :1rem;
                             p {
                                 font-size: 1.3rem;
                             }
-                            span {
-                            }
                         }
                         .imgSliderWrapper {
                             width: 100%;
@@ -78,6 +76,29 @@ $cover-text-small-padding :1rem;
             }
         }
     }
+    //contact 
+    .kontktPageBackground {
+        div {
+            h1 {
+                padding-top:$cover-text-small-padding;
+                font-size: $cover-text-small;
+            }
+        }
+    }
+    .kontaktPage {
+        .contactDetails {
+            div {
+                img {
+                    width: 35px;
+                }
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        
+    }
+
 
 
 }
