@@ -714,14 +714,15 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   }
   .referencPage .displayReference article .referencCards .referencCard .referencText {
     height: fit-content;
-    max-width: 90%;
+    max-width: 100%;
     margin-inline: auto;
   }
   .referencPage .displayReference article .referencCards .referencCard .referencText p {
     font-size: 1.2rem;
   }
   .referencPage .displayReference article .referencCards .referencCard .imgSliderWrapper {
-    width: 90%;
+    width: 100%;
+    height: 260px;
     margin-inline: auto;
   }
 }
