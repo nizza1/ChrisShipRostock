@@ -745,6 +745,17 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   .leistungenPage article h2 {
     font-size: 1.2rem;
   }
+  footer article {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  footer article nav .Links {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+  }
 }
 /* @media (min-width: $mq-desktop) {
     :root {
