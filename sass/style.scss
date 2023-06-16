@@ -23,6 +23,9 @@
 
 
 //Global values 
+:root {
+    font-size: 15px;
+  }
 *{
     font-family: 'Helvetica Neue', sans-serif;
     margin: 0;
@@ -30,7 +33,6 @@
     box-sizing: border-box;
     font-weight: 200;
     color: $primary-color;
-
 }
 
 body {
