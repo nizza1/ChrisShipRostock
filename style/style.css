@@ -378,7 +378,7 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   margin-bottom: 6rem;
 }
 .referencPage .referencMenu .displayReference article {
-  width: 100%;
+  /* width: 100%; */
   display: none;
 }
 .referencPage .referencMenu .displayReference article .referencCard {
@@ -703,6 +703,26 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   }
   .uberUnsPage .textContinerUberUns {
     border-top: none;
+  }
+  .referecePageBackround div h1 {
+    padding-top: 1rem;
+    font-size: 3rem;
+  }
+  .referencPage .displayReference article .referencCards .referencCard {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .referencPage .displayReference article .referencCards .referencCard .referencText {
+    height: fit-content;
+    max-width: 90%;
+    margin-inline: auto;
+  }
+  .referencPage .displayReference article .referencCards .referencCard .referencText p {
+    font-size: 1.2rem;
+  }
+  .referencPage .displayReference article .referencCards .referencCard .imgSliderWrapper {
+    width: 90%;
+    margin-inline: auto;
   }
 }
 /* @media (min-width: $mq-desktop) {

@@ -7,14 +7,18 @@ $media-min-medium : 742px ;
 
 $media-max-small : 665px ;
 
+$cover-text-small : 3rem ;
+$cover-text-small-padding :1rem;
+
 
 
 @media screen and (max-width: $media-max-small) {
+    //uberUns
     .uberunsPageBackground {
         div {
             h1 {
-                padding-top: 1rem;
-                font-size: 3rem;
+                padding-top: $cover-text-small-padding;
+                font-size: $cover-text-small;
             }
         }
     }
@@ -30,6 +34,41 @@ $media-max-small : 665px ;
             border-top: none;
         }
     }
+    //references 
+    .referecePageBackround {
+        div {
+            h1 {
+                padding-top:$cover-text-small-padding;
+                font-size: $cover-text-small;
+            }
+        }
+    }
+    .referencPage {
+        .displayReference {
+            article {
+                .referencCards {
+                    .referencCard {
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        .referencText {
+                            height: fit-content;
+                            max-width: 90%;
+                            margin-inline: auto;
+                            p {
+                                font-size: 1.2rem;
+                            }
+                        }
+                        .imgSliderWrapper {
+                            width: 90%;
+                            margin-inline: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
 }
 
 

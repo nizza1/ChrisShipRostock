@@ -89,27 +89,12 @@
                 min-height: 500px;
                 padding:2rem 0;
                 margin-bottom: 6rem;
-                .schiffbauGroup {
-                    
-                }
-
-                .maschienenGroup {
-                }
-
-                .stahlGroup {
-                 
-                }
-
-                .gussGroup {
-                 
-                }
+   
                 article {
-                    width: 100%;
+                    /* width: 100%; */
                     display: none;
                     .referencCard {
-
                         display: flex;
-                        
                         gap: 2rem;
                         align-items: center;
                         .referencText {
