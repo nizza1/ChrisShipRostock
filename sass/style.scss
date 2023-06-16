@@ -2,11 +2,10 @@
 @use 'mixin' as * ;
 @use 'stylingMix' as * ;
 @use 'global' as *;
+
 @forward 'preLoader';
 @forward 'header';
 @forward 'footer';
-
-
 
 //Pages 
 @forward 'impressum';
@@ -14,6 +13,9 @@
 @forward 'leistungen';
 @forward 'kontakt';
 @forward 'uberuns';
+
+//MediaQueries 
+@forward 'mediaQueries';
 
 
 //import 

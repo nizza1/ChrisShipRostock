@@ -1,0 +1,50 @@
+@use 'global' as * ;
+@use 'mixin' as * ;
+@use 'stylingMix' as * ;
+
+$media-max-medium : 665px ;
+$media-min-medium : 742px ;
+
+$media-max-small : 665px ;
+
+
+
+@media screen and (max-width: $media-max-small) {
+    .uberunsPageBackground {
+        div {
+            h1 {
+                padding-top: 1rem;
+                font-size: 3rem;
+            }
+        }
+    }
+    .uberUnsPage {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+        .animatedItmes {
+            h1 {
+                font-size: 4rem;
+            }
+        }
+        .textContinerUberUns {
+            border-top: none;
+        }
+    }
+}
+
+
+/* @media (min-width: $mq-desktop) {
+    :root {
+        --font-size-regular: 18px;
+        --gutter: 1.75rem;
+    }
+} */
+
+
+/* @media screen and (max-width: 1170px) {$base_width: 960px;}
+@media screen and (min-width: 1171px) {$base_width: 1160px;} */
+
+
+/* @media (min-width: 768px) and (max-width:){
+    
+} */
