@@ -45,7 +45,11 @@ $cover-text-small-padding :1rem;
     }
     .referencPage {
         .referencMenu {
-
+            .radio-inputs {
+                width: 100%;
+           /*      background-color: red; */
+           border-bottom: 1px solid black;
+            }
         }
         .displayReference {
             article {
@@ -58,13 +62,16 @@ $cover-text-small-padding :1rem;
                             max-width: 100%;
                             margin-inline: auto;
                             p {
-                                font-size: 1.2rem;
+                                font-size: 1.3rem;
+                            }
+                            span {
                             }
                         }
                         .imgSliderWrapper {
                             width: 100%;
                             height: 260px;
                             margin-inline: auto;
+                            margin: 1rem 0;
                         }
                     }
                 }

@@ -322,7 +322,6 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
 }
 
 .referencPage {
-  margin: 0 0 0 0;
   position: relative;
 }
 .referencPage .referencMenu .radio-inputs {
@@ -330,7 +329,6 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   /* border-bottom: 1px solid $primary-color; */
   position: sticky;
   top: 70px;
-  margin: 1rem 0;
   flex-wrap: wrap;
   display: flex;
   background-color: #E2E2E2;
@@ -418,7 +416,7 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   margin: 2rem 0;
 }
 .referencPage .referencMenu .displayReference article .referencCard .imgSliderWrapper .imgSlider {
-  column-gap: 1rem;
+  column-gap: 0rem;
   width: 100%;
   height: 100%;
   display: flex;
@@ -708,6 +706,11 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
     padding-top: 1rem;
     font-size: 3rem;
   }
+  .referencPage .referencMenu .radio-inputs {
+    width: 100%;
+    /*      background-color: red; */
+    border-bottom: 1px solid black;
+  }
   .referencPage .displayReference article .referencCards .referencCard {
     display: grid;
     grid-template-columns: 1fr;
@@ -718,12 +721,13 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
     margin-inline: auto;
   }
   .referencPage .displayReference article .referencCards .referencCard .referencText p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   .referencPage .displayReference article .referencCards .referencCard .imgSliderWrapper {
     width: 100%;
     height: 260px;
     margin-inline: auto;
+    margin: 1rem 0;
   }
 }
 /* @media (min-width: $mq-desktop) {
