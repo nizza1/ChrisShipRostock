@@ -769,10 +769,9 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
 
 } */
 /* @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55'); */
-:root {
-  font-size: 15px;
-}
-
+/* :root {
+    font-size: 15px;
+  } */
 * {
   font-family: "Helvetica Neue", sans-serif;
   margin: 0;
