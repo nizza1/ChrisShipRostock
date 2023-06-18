@@ -871,6 +871,7 @@ body main .hero .heroTitleContainer .angebotsSatzOben button.learn-more .circle 
   height: 3rem;
   background: #000000;
   border-radius: 1.625rem;
+  border: 1px solid #E2E2E2;
 }
 body main .hero .heroTitleContainer .angebotsSatzOben button.learn-more .circle .icon {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);

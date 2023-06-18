@@ -31,6 +31,7 @@
         height: 3rem;
         background: $primary-color;
         border-radius: 1.625rem;
+        border: 1px solid $primary-background;
        }
        
        button.learn-more .circle .icon {
@@ -60,6 +61,7 @@
         border-top: 0.125rem solid #fff;
         border-right: 0.125rem solid #fff;
         transform: rotate(45deg);
+  
        }
        
        button.learn-more .button-text {
