@@ -304,6 +304,7 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  /*     background-attachment: scroll; */
   min-height: 400px;
   display: flex;
   align-items: center;
@@ -471,6 +472,7 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: scroll;
   min-height: 400px;
   display: flex;
   align-items: center;
@@ -545,6 +547,7 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  /*     background-attachment: scroll; */
   min-height: 400px;
   display: flex;
   align-items: center;
@@ -609,6 +612,7 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  /*     background-attachment: fixed; */
   min-height: 400px;
   display: flex;
   align-items: center;

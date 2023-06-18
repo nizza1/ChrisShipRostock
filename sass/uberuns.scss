@@ -5,8 +5,10 @@
 .uberunsPageBackground {
     background-image: url('../img/wheelShip.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+  background-size: cover;
+
     background-position: center;
+/*     background-attachment: fixed; */
     min-height: 400px;
     display: flex;
     align-items: center;
