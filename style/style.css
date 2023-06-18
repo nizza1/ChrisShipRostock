@@ -36,7 +36,7 @@ header {
   width: 100%;
   z-index: 100;
   backdrop-filter: blur(12px);
-  background-color: rgba(226, 226, 226, 0.4235294118);
+  background-color: rgba(245, 245, 245, 0.4941176471);
 }
 header .navBar {
   max-width: 1100px;
