@@ -47,17 +47,21 @@ $cover-text-small-padding :1rem;
         .referencMenu {
             .radio-inputs {
                 width: 100%;
-           /*      background-color: red; */
-           border-bottom: 1px solid black;
             }
         }
         .displayReference {
             article {
                 .referencCards {
                     .referencCard {
+                        margin-bottom: 2rem;
+                        border-radius: 1.2rem;
                         display: grid;
                         grid-template-columns: 1fr;
                         .referencText {
+                            border-top: none;
+                            border-bottom: 1px solid $primary-color;
+                            padding-top: 0;
+                            padding-bottom: 1rem;
                             height: fit-content;
                             max-width: 100%;
                             margin-inline: auto;
