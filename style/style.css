@@ -889,6 +889,11 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   }
 }
 @media screen and (max-width: 665px) {
+  .hero {
+    background-image: url("../img/heroImg/dylan-mcleod-4zqvu9dyvSk-unsplash.jpg") !important;
+    height: 120vh;
+    overflow: hidden;
+  }
   .hero .heroTitleContainer article .titleHighlight {
     font-size: 2.5rem !important;
   }
@@ -1009,9 +1014,6 @@ body {
   overscroll-behavior: none;
   overflow-x: hidden;
 }
-body main {
-  min-height: 100vh;
-}
 body main .hero {
   overflow-y: hidden;
   padding-bottom: 2rem;
@@ -1043,10 +1045,6 @@ body main .hero .heroBlur {
   z-index: 7;
 }
 body main .hero .heroTitleContainer {
-  /*  background-image: url('../img/heroImg/optma-min.png');  */
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center left;
   width: 100%;
   max-width: 1100px;
   margin-inline: auto;

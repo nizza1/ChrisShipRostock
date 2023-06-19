@@ -46,7 +46,6 @@ body {
     overflow-x: hidden;
 
     main {
-        min-height: 100vh;
         .hero {
             overflow-y: hidden;
             padding-bottom: $section-padding;
@@ -72,11 +71,6 @@ body {
                 z-index: 7;
             }
            .heroTitleContainer {
-         /*  background-image: url('../img/heroImg/optma-min.png');  */
-         
-            background-size:contain;
-            background-repeat: no-repeat;
-            background-position: center left;
             width: 100%;
             max-width: $max-width;
             margin-inline: auto;
