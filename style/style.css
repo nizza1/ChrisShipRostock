@@ -865,6 +865,9 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
 @media (max-width: 835px) {
   .contactForm {
     grid-template-columns: 1fr;
+    border-bottom: none;
+    border-top: none;
+    padding: 2rem 0;
   }
   .contactForm .textContainerContact {
     height: auto;

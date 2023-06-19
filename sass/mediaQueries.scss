@@ -13,6 +13,9 @@ $cover-text-small-padding :1rem;
 @media (max-width: 835px) {
     .contactForm {
         grid-template-columns: 1fr;
+        border-bottom: none;
+        border-top: none;
+        padding: 2rem 0;
         .textContainerContact {
             height: auto;
             h1 {
