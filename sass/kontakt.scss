@@ -51,6 +51,140 @@
        
     }
   }
+
+  .contactForm {
+    border-top: 1px solid $primary-color;
+    border-bottom: 1px solid $primary-color;
+    margin-bottom: 4rem;
+    padding: $spacing-larg 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    .textContainerContact {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 300px;
+    
+        .textHighlight {
+            -webkit-text-stroke:2px #00000017;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+            font-size: 5rem;
+        }
+    }
+    .contactFormConteiner {
+        form {
+            .contactButton {
+                position: relative;
+                margin: auto;
+                padding: 12px 18px;
+                transition: all 0.2s ease;
+                border: none;
+                background: none;
+                span {
+                    position: relative;
+                    font-family: "Ubuntu", sans-serif;
+                    font-size: 18px;
+                    font-weight: 700;
+                    letter-spacing: 0.05em;
+                    color: $primary-color;
+                   }
+                svg {
+                    position: relative;
+                    top: 0;
+                    margin-left: 10px;
+                    fill: $primary-color;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke: $primary-color;
+                    stroke-width: 2;
+                    transform: translateX(-5px);
+                    transition: all 0.3s ease;
+                   }
+                svg {
+                    transform: translateX(0);
+                   }
+                   
+                   
+               }
+               .contactButton:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                border-radius: 50px;
+                background: #fff;
+                width: 45px;
+                height: 45px;
+                transition: all 0.3s ease;
+               }
+               .contactButton:hover:before {
+                width: 100%;
+                background: #fff;
+               }
+               .contactButton:active {
+                transform: scale(0.95);
+               }
+
+            div {
+                position: relative;
+                label {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding: 10px 0;
+                    font-size: 16px;
+                    color: #676767;
+                    pointer-events: none;
+                    transition: .5s;
+                    letter-spacing: .15rem;
+                }
+                input {
+                    /* width: 100%; */
+                    min-width: 350px;
+                    max-width: 100%;
+                    padding: 10px 0;
+                    font-size: 16px;
+                    color: $primary-color;
+                    margin-bottom: 30px;
+                    border: none;
+                    border-bottom: 1px solid $primary-color;
+                    outline: none;
+                    background: transparent;
+                }
+                input:focus ~ label,
+                input:valid ~ label
+                 {
+                    top: -20px;
+                    left: 0;
+                    color: $primary-color;
+                    font-size: 12px;
+                }
+
+                textarea {
+                    border: none;
+                    background-color: transparent;
+                    border-bottom: 1px solid $primary-color;
+                    min-width: 350px;
+                    max-width: 100%;
+                    padding: 1rem 0;
+                    font-size: 16px;
+                    color: #676767;
+                    letter-spacing: .15rem;
+                    margin-bottom: 1rem;
+                }
+
+                textarea:focus {
+                    outline: none;
+                }
+
+            }
+        }
+    }
+ 
+  }
   .contactMap {
     min-height: 400px;
     background-color: $primary-color;

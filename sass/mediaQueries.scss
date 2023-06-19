@@ -10,7 +10,21 @@ $media-max-small : 665px ;
 $cover-text-small : 3rem ;
 $cover-text-small-padding :1rem;
 
+@media (max-width: 835px) {
+    .contactForm {
+        grid-template-columns: 1fr;
+        .textContainerContact {
+            height: auto;
+            h1 {
+                margin-bottom: 1rem;
+            }
+            .textHighlight {
+                font-size: 3rem;
+            }
+        }
 
+    }
+}
 
 @media screen and (max-width: $media-max-small) {
     //uberUns
@@ -105,6 +119,9 @@ $cover-text-small-padding :1rem;
             }
         }
         
+    }
+    .contactForm {
+
     }
     //leistungen
     .LeistungenPageBackround {
