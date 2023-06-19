@@ -34,11 +34,23 @@ $cover-text-small-padding :1rem;
                 }
             }
         }
-
     }
 }
 
 @media screen and (max-width: $media-max-small) {
+    //Home 
+    .hero {
+        .heroTitleContainer {
+            article {
+                .titleHighlight {
+                    font-size: 2.5rem !important;
+                }
+                h1 {
+                    font-size: 1.6rem !important;
+                }
+            }
+        }
+    }
     //uberUns
     .uberunsPageBackground {
         div {

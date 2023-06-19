@@ -762,6 +762,7 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   font-size: 12px;
 }
 .contactForm .contactFormConteiner form div textarea {
+  border-radius: none;
   border: none;
   background-color: transparent;
   border-bottom: 1px solid #000000;
@@ -888,6 +889,12 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   }
 }
 @media screen and (max-width: 665px) {
+  .hero .heroTitleContainer article .titleHighlight {
+    font-size: 2.5rem !important;
+  }
+  .hero .heroTitleContainer article h1 {
+    font-size: 1.6rem !important;
+  }
   .uberunsPageBackground div h1 {
     padding-top: 1rem;
     font-size: 3rem;
@@ -1014,7 +1021,7 @@ body main .hero {
   background-position-y: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 800px;
+  min-height: 800px;
   display: flex;
   justify-content: start;
   align-items: center;
