@@ -507,6 +507,7 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
 .referencPage .referencMenu .displayReference article .referencCard .imgSliderWrapper .prevButton img {
   width: 100%;
   border-radius: 50%;
+  border: 1px solid aliceblue;
   background-color: aliceblue;
 }
 .referencPage .referencMenu .displayReference article .referencCard .imgSliderWrapper .nextButton {
