@@ -153,6 +153,7 @@
                     border-bottom: 1px solid $primary-color;
                     outline: none;
                     background: transparent;
+                    border-radius: 0;
                 }
                 input:focus ~ label,
                 input:valid ~ label

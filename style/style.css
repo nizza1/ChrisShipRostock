@@ -749,6 +749,7 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   border-bottom: 1px solid #000000;
   outline: none;
   background: transparent;
+  border-radius: 0;
 }
 .contactForm .contactFormConteiner form div input:focus ~ label,
 .contactForm .contactFormConteiner form div input:valid ~ label {
