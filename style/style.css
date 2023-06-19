@@ -900,6 +900,9 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   .hero .heroTitleContainer article h1 {
     font-size: 1.6rem !important;
   }
+  .blogHome {
+    border-top: 1px solid #000000;
+  }
   .uberunsPageBackground div h1 {
     padding-top: 1rem;
     font-size: 3rem;
