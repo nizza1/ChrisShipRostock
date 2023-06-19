@@ -900,9 +900,6 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   .hero .heroTitleContainer article h1 {
     font-size: 1.6rem !important;
   }
-  .blogHome {
-    border-top: 1px solid #000000;
-  }
   .uberunsPageBackground div h1 {
     padding-top: 1rem;
     font-size: 3rem;
@@ -982,6 +979,12 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: 0.3rem;
+  }
+  footer article div ul li {
+    display: none;
+  }
+  footer article div ul li:last-of-type {
+    display: block;
   }
 }
 /* @media (min-width: $mq-desktop) {
