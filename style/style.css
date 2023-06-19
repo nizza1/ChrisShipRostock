@@ -89,6 +89,8 @@ header {
   width: 100%;
   z-index: 100;
   backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  -moz-backdrop-filter: blur(12px);
   background-color: rgba(245, 245, 245, 0.4941176471);
 }
 header .navBar {
