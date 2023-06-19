@@ -186,7 +186,7 @@ $cover-text-small-padding :1rem;
                 text-align: center;
                 font-size: 1.5rem ;
                 margin-bottom: .3rem;
-               } 
+               }
             }
             div {
                 ul {
@@ -195,6 +195,7 @@ $cover-text-small-padding :1rem;
                     }
                     li:last-of-type{
                         display: block;
+                        width: 100%;
                     }
                 }
             }
