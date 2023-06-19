@@ -667,6 +667,9 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   justify-content: space-between;
   height: 300px;
 }
+.contactForm .textContainerContact h1 {
+  max-width: 40ch;
+}
 .contactForm .textContainerContact .textHighlight {
   -webkit-text-stroke: 2px rgba(0, 0, 0, 0.0901960784);
   -webkit-text-fill-color: transparent;
@@ -877,6 +880,11 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   }
   .contactForm .textContainerContact .textHighlight {
     font-size: 3rem;
+  }
+  .contactForm .contactFormConteiner form .contactButton {
+    border-radius: 30px;
+    border: 1px solid #000000;
+    margin: 1rem 0;
   }
 }
 @media screen and (max-width: 665px) {

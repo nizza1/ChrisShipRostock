@@ -25,6 +25,15 @@ $cover-text-small-padding :1rem;
                 font-size: 3rem;
             }
         }
+        .contactFormConteiner{
+            form {
+                .contactButton {
+                    border-radius: 30px ;
+                    border: 1px solid $primary-color;
+                    margin: 1rem 0;
+                }
+            }
+        }
 
     }
 }
