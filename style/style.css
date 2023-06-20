@@ -894,7 +894,7 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   .hero {
     background-image: url("../img/heroImg/dylan-mcleod-4zqvu9dyvSk-unsplash.jpg") !important;
     background-attachment: scroll;
-    min-height: 600px;
+    min-height: 700px;
     /*  overflow: hidden; */
   }
   .hero .heroBlur {
@@ -908,6 +908,26 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   }
   .hero .heroTitleContainer article h1 {
     font-size: 1.6rem !important;
+  }
+  .infosSContainer {
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .infosSContainer h1 {
+    font-size: 2rem !important;
+    line-height: 1.2 !important;
+    /*  text-align: center; */
+  }
+  .infosSContainer h1 span {
+    font-size: 2.5rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 1rem;
+  }
+  .imageTextOutContainer .iconsContainerHomeLeistung h2 {
+    /*  @include titleSmall($primary-color); */
+    font-size: 2.5rem !important;
   }
   .uberunsPageBackground div h1 {
     padding-top: 1rem;
@@ -986,7 +1006,7 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   footer article nav .Links {
     width: 100%;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 0.3rem;
   }
   footer article div ul li {
@@ -1035,8 +1055,7 @@ body main .hero {
   padding-bottom: 2rem;
   background-image: url("../img/heroImg/dorian-mongel-5Rgr_zI7pBw-unsplash.jpg");
   background-attachment: fixed;
-  background-position-x: center;
-  background-position-y: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 800px;

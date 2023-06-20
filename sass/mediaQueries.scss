@@ -10,6 +10,8 @@ $media-max-small : 665px ;
 $cover-text-small : 3rem ;
 $cover-text-small-padding :1rem;
 
+$font-size-title-home :2.5rem ;
+
 @media (max-width: 835px) {
     .contactForm {
         grid-template-columns: 1fr;
@@ -42,12 +44,11 @@ $cover-text-small-padding :1rem;
     .hero {
         background-image: url('../img/heroImg/dylan-mcleod-4zqvu9dyvSk-unsplash.jpg') !important;
         background-attachment: scroll;
-        min-height: 600px;
+        min-height: 700px;
        /*  overflow: hidden; */
        .heroBlur {
         height: 100%;
       }
-
         .heroTitleContainer {
             height: auto;
             article {
@@ -60,7 +61,31 @@ $cover-text-small-padding :1rem;
             }
         }
     }
-   
+    .infosSContainer {
+        padding: $section-paddingL 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        h1 {
+            font-size: 2rem !important;
+            line-height: 1.2 !important;
+            
+            span {
+                font-size: $font-size-title-home !important;
+                line-height: 1.2 !important;
+                margin-bottom: 1rem;
+            }
+           /*  text-align: center; */
+        }
+    }
+    .imageTextOutContainer {
+        .iconsContainerHomeLeistung {
+            h2 {
+                /*  @include titleSmall($primary-color); */
+                font-size: $font-size-title-home !important;
+             }
+        }
+    }
     //uberUns
     .uberunsPageBackground {
         div {
@@ -189,7 +214,7 @@ $cover-text-small-padding :1rem;
                .Links{
                 width: 100%;
                 text-align: center;
-                font-size: 1.5rem ;
+                font-size: 1.2rem ;
                 margin-bottom: .3rem;
                }
             }
