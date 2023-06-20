@@ -44,7 +44,9 @@ $font-size-title-home :2.5rem ;
     .hero {
         background-image: url('../img/heroImg/dylan-mcleod-4zqvu9dyvSk-unsplash.jpg') !important;
         background-attachment: scroll !important;
-        min-height: 899px !important;
+        min-height: 799px !important;
+        align-items: start !important;
+        padding-top: 8rem;
        /*  overflow: hidden; */
        .heroBlur {
         height: 100%;
@@ -53,7 +55,9 @@ $font-size-title-home :2.5rem ;
             height: auto;
             article {
                 margin: 0 auto !important;
+                
                 .titleHighlight {
+                 
                     font-size: 2.5rem !important;
                 }
                 h1 {
