@@ -2,6 +2,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Get the contact form element
     const contactForm = document.getElementById('contact-form');
+
   
     // Add event listener to the form submit event
     contactForm.addEventListener('submit', function(event) {
@@ -10,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
       // Get form data
       const formData = new FormData(contactForm);
+      console.log(formData);
   
       // Create a new XMLHttpRequest object
       const xhr = new XMLHttpRequest();
