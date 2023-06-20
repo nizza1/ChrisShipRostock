@@ -893,8 +893,8 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
 @media screen and (max-width: 665px) {
   .hero {
     background-image: url("../img/heroImg/dylan-mcleod-4zqvu9dyvSk-unsplash.jpg") !important;
-    background-attachment: scroll;
-    min-height: 700px;
+    background-attachment: scroll !important;
+    min-height: 899px !important;
     /*  overflow: hidden; */
   }
   .hero .heroBlur {
@@ -902,6 +902,9 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   }
   .hero .heroTitleContainer {
     height: auto;
+  }
+  .hero .heroTitleContainer article {
+    margin: 0 auto !important;
   }
   .hero .heroTitleContainer article .titleHighlight {
     font-size: 2.5rem !important;
