@@ -3,7 +3,7 @@
 
 
 @mixin primeryButtonDark {
-    button {
+    a {
         margin: 4rem 0 2rem 0;
         position: relative;
         display: inline-block;
@@ -17,12 +17,11 @@
 
        }
        
-       button.learn-more {
+       a.learn-more {
         width: 20rem;
         height: auto;
        }
-       
-       button.learn-more .circle {
+       a.learn-more .circle {
         transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
         position: relative;
         display: block;
@@ -34,7 +33,7 @@
         border: 1px solid $primary-background;
        }
        
-       button.learn-more .circle .icon {
+       a.learn-more .circle .icon {
         transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
         position: absolute;
         top: 0;
@@ -43,7 +42,7 @@
         background: #fff;
        }
        
-       button.learn-more .circle .icon.arrow {
+       a.learn-more .circle .icon.arrow {
         transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
         left: 0.625rem;
         width: 1.125rem;
@@ -51,7 +50,7 @@
         background: none;
        }
        
-       button.learn-more .circle .icon.arrow::before {
+       a.learn-more .circle .icon.arrow::before {
         position: absolute;
         content: "";
         top: -0.29rem;
@@ -64,7 +63,7 @@
   
        }
        
-       button.learn-more .button-text {
+       a.learn-more .button-text {
         transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
         position: absolute;
         top: 0;
@@ -81,16 +80,16 @@
         font-weight: 400;
        }
        
-       button:hover .circle {
+       a:hover .circle {
         width: 100%;
        }
        
-       button:hover .circle .icon.arrow {
+       a:hover .circle .icon.arrow {
         background: $primary-background;
         transform: translate(1rem, 0);
        }
 
-       button:hover .button-text {
+       a:hover .button-text {
         color: $primary-background;
        }
 }

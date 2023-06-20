@@ -41,9 +41,8 @@ body {
     background-color: $primary-background;
     position: relative;
     /* cursor: none; */
-    scroll-behavior: smooth;
-    overscroll-behavior: none;
     overflow-x: hidden;
+
 
     main {
         .hero {

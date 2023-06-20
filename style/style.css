@@ -1055,8 +1055,6 @@ body {
   background-color: #E2E2E2;
   position: relative;
   /* cursor: none; */
-  scroll-behavior: smooth;
-  overscroll-behavior: none;
   overflow-x: hidden;
 }
 body main .hero {
@@ -1095,7 +1093,7 @@ body main .hero .heroTitleContainer {
   height: 330px;
   z-index: 8;
 }
-body main .hero .heroTitleContainer .angebotsSatzOben button {
+body main .hero .heroTitleContainer .angebotsSatzOben a {
   margin: 4rem 0 2rem 0;
   position: relative;
   display: inline-block;
@@ -1107,11 +1105,11 @@ body main .hero .heroTitleContainer .angebotsSatzOben button {
   background: transparent;
   padding: 0;
 }
-body main .hero .heroTitleContainer .angebotsSatzOben button.learn-more {
+body main .hero .heroTitleContainer .angebotsSatzOben a.learn-more {
   width: 20rem;
   height: auto;
 }
-body main .hero .heroTitleContainer .angebotsSatzOben button.learn-more .circle {
+body main .hero .heroTitleContainer .angebotsSatzOben a.learn-more .circle {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: relative;
   display: block;
@@ -1122,7 +1120,7 @@ body main .hero .heroTitleContainer .angebotsSatzOben button.learn-more .circle 
   border-radius: 1.625rem;
   border: 1px solid #E2E2E2;
 }
-body main .hero .heroTitleContainer .angebotsSatzOben button.learn-more .circle .icon {
+body main .hero .heroTitleContainer .angebotsSatzOben a.learn-more .circle .icon {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
@@ -1130,14 +1128,14 @@ body main .hero .heroTitleContainer .angebotsSatzOben button.learn-more .circle 
   margin: auto;
   background: #fff;
 }
-body main .hero .heroTitleContainer .angebotsSatzOben button.learn-more .circle .icon.arrow {
+body main .hero .heroTitleContainer .angebotsSatzOben a.learn-more .circle .icon.arrow {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   left: 0.625rem;
   width: 1.125rem;
   height: 0.125rem;
   background: none;
 }
-body main .hero .heroTitleContainer .angebotsSatzOben button.learn-more .circle .icon.arrow::before {
+body main .hero .heroTitleContainer .angebotsSatzOben a.learn-more .circle .icon.arrow::before {
   position: absolute;
   content: "";
   top: -0.29rem;
@@ -1148,7 +1146,7 @@ body main .hero .heroTitleContainer .angebotsSatzOben button.learn-more .circle 
   border-right: 0.125rem solid #fff;
   transform: rotate(45deg);
 }
-body main .hero .heroTitleContainer .angebotsSatzOben button.learn-more .button-text {
+body main .hero .heroTitleContainer .angebotsSatzOben a.learn-more .button-text {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
@@ -1164,14 +1162,14 @@ body main .hero .heroTitleContainer .angebotsSatzOben button.learn-more .button-
   font-size: 1.3rem;
   font-weight: 400;
 }
-body main .hero .heroTitleContainer .angebotsSatzOben button:hover .circle {
+body main .hero .heroTitleContainer .angebotsSatzOben a:hover .circle {
   width: 100%;
 }
-body main .hero .heroTitleContainer .angebotsSatzOben button:hover .circle .icon.arrow {
+body main .hero .heroTitleContainer .angebotsSatzOben a:hover .circle .icon.arrow {
   background: #E2E2E2;
   transform: translate(1rem, 0);
 }
-body main .hero .heroTitleContainer .angebotsSatzOben button:hover .button-text {
+body main .hero .heroTitleContainer .angebotsSatzOben a:hover .button-text {
   color: #E2E2E2;
 }
 body main .hero .heroTitleContainer .angebotsSatzOben .titleHighlight {
