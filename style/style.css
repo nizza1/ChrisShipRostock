@@ -1040,6 +1040,10 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
 /* :root {
     font-size: 15px;
   } */
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   font-family: "Helvetica Neue", sans-serif;
   margin: 0;
