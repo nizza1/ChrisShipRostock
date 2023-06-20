@@ -1037,7 +1037,6 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
 /* @media (min-width: 768px) and (max-width:){
 
 } */
-/* @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55'); */
 /* :root {
     font-size: 15px;
   } */
@@ -1054,7 +1053,6 @@ body {
   font-family: Helvetica, sans-serif;
   background-color: #E2E2E2;
   position: relative;
-  /* cursor: none; */
   overflow-x: hidden;
 }
 body main .hero {
