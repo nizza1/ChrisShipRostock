@@ -19,11 +19,12 @@ header {
         @media (max-width: $max-width) {
             padding-inline: 1.2rem;
           }
-        .logo h1{
-            font-weight: 100;
-            color: $primary-color;
+        .logo {
+            img {
+                width : 90px;
+            }
         }
-        padding: .7rem 0 ;
+
         margin-inline: auto;
         @include flex(1, row, space-between, center, nowrap);
         .nav{
