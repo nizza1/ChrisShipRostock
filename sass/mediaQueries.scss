@@ -41,10 +41,15 @@ $cover-text-small-padding :1rem;
     //Home 
     .hero {
         background-image: url('../img/heroImg/dylan-mcleod-4zqvu9dyvSk-unsplash.jpg') !important;
-        height: 120vh ;
-        overflow: hidden;
+        background-attachment: scroll;
+        min-height: 600px;
+       /*  overflow: hidden; */
+       .heroBlur {
+        height: 100%;
+      }
 
         .heroTitleContainer {
+            height: auto;
             article {
                 .titleHighlight {
                     font-size: 2.5rem !important;
