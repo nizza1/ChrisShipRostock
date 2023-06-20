@@ -929,6 +929,10 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
     /*  @include titleSmall($primary-color); */
     font-size: 2.5rem !important;
   }
+  .blogHome {
+    border-bottom: 1px solid #000000;
+    margin-bottom: 2rem;
+  }
   .uberunsPageBackground div h1 {
     padding-top: 1rem;
     font-size: 3rem;
