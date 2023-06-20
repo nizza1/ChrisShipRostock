@@ -43,7 +43,8 @@ $font-size-title-home :2.5rem ;
     //Home 
     .hero {
         background-image: url('../img/heroImg/dylan-mcleod-4zqvu9dyvSk-unsplash.jpg') !important;
-        background-attachment: scroll !important;
+        /* background-attachment: scroll !important; */
+        background-attachment: fixed !important;
         min-height: 799px !important;
         align-items: start !important;
         padding-top: 8rem;
