@@ -1251,7 +1251,7 @@ body main .infosSContainer .infosS div .iconForInfos:after {
   background-color: #002AFF;
 }
 body main .infosSContainer .infosS div p {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 200;
   color: #000000;
   max-width: 20ch;

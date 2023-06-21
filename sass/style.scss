@@ -148,7 +148,7 @@ body {
                     }
 
                     p{
-                        @include icon-description($primary-color);
+                        @include standardText($primary-color);
                         max-width: 20ch;
                         max-width: 300px;
                        /*  text-align: center; */
