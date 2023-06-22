@@ -16,18 +16,18 @@ header {
     background-color: #f5f5f57e;
     .navBar {
         max-width: $max-width;
+        margin-inline: auto;
+        @include flex(1, row, space-between, center, nowrap);
         @media (max-width: $max-width) {
             padding-inline: 1.2rem;
           }
         .logo {
             max-width: 90px !important;
             img {
-                width : 100% !important;
+                width : 100% ;
             }
         }
-
-        margin-inline: auto;
-        @include flex(1, row, space-between, center, nowrap);
+       
         .nav{
             max-width: $max-width;
             position: reletive;
@@ -150,8 +150,6 @@ header {
     .menuContainerOpen {
         transform: translateX(0);
     }
-    
-  
         /* nav */ 
         
         /* mixin animation for nav  */
@@ -161,7 +159,6 @@ header {
             transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
             
         }
-        
-        /* mixin animation for nav  */
+
     }
 }
