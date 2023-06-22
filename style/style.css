@@ -111,8 +111,11 @@ header .navBar {
     padding-inline: 1.2rem;
   }
 }
+header .navBar .logo {
+  max-width: 90px !important;
+}
 header .navBar .logo img {
-  width: 90px;
+  width: 100% !important;
 }
 header .navBar .nav {
   max-width: 1100px;
