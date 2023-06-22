@@ -3,7 +3,7 @@
 
 
 @mixin primeryButtonDark {
-    a {
+    .learn-more {
         margin: 4rem 0 2rem 0;
         position: relative;
         display: inline-block;
@@ -14,82 +14,74 @@
         text-decoration: none;
         background: transparent;
         padding: 0;
+        width: 20rem;
+        height: auto;
+        .button-text {
+            transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: .5rem 0;
+            margin: 0 0 0 1.85rem;
+            color:$primary-background;
+            line-height: 1.6;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+            font-weight: 400;
+           }
+        .circle {
+            transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+            position: relative;
+            display: block;
+            margin: 0;
+            width: 3rem;
+            height: 3rem;
+            background: $primary-color;
+            border-radius: 1.625rem;
+            border: 1px solid $primary-background;
+            .icon {
+                transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                background: #fff;
+               }
+               .icon.arrow {
+                transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+                left: 0.625rem;
+                width: 1.125rem;
+                height: 0.125rem;
+                background: none;
+               }
+               .icon.arrow::before {
+                position: absolute;
+                content: "";
+                top: -0.29rem;
+                right: 0.0625rem;
+                width: 0.625rem;
+                height: 0.625rem;
+                border-top: 0.125rem solid #fff;
+                border-right: 0.125rem solid #fff;
+                transform: rotate(45deg);
+               }
+           }
 
        }
        
-       a.learn-more {
-        width: 20rem;
-        height: auto;
-       }
-       a.learn-more .circle {
-        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-        position: relative;
-        display: block;
-        margin: 0;
-        width: 3rem;
-        height: 3rem;
-        background: $primary-color;
-        border-radius: 1.625rem;
-        border: 1px solid $primary-background;
-       }
-       
-       a.learn-more .circle .icon {
-        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        background: #fff;
-       }
-       
-       a.learn-more .circle .icon.arrow {
-        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-        left: 0.625rem;
-        width: 1.125rem;
-        height: 0.125rem;
-        background: none;
-       }
-       
-       a.learn-more .circle .icon.arrow::before {
-        position: absolute;
-        content: "";
-        top: -0.29rem;
-        right: 0.0625rem;
-        width: 0.625rem;
-        height: 0.625rem;
-        border-top: 0.125rem solid #fff;
-        border-right: 0.125rem solid #fff;
-        transform: rotate(45deg);
-  
-       }
-       
-       a.learn-more .button-text {
-        transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        padding: .5rem 0;
-        margin: 0 0 0 1.85rem;
-        color:$primary-background;
-        line-height: 1.6;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 1.3rem;
-        font-weight: 400;
-       }
-       
-       a:hover .circle {
+       .learn-more:hover .circle {
         width: 100%;
        }
        
-       a:hover .circle .icon.arrow {
+       .learn-more:hover .circle .icon.arrow {
         background: $primary-background;
         transform: translate(1rem, 0);
        }
 
-       a:hover .button-text {
+       .learn-more:hover .button-text {
         color: $primary-background;
        }
 }

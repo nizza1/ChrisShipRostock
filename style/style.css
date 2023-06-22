@@ -1094,7 +1094,7 @@ body main .hero .heroTitleContainer {
   height: 330px;
   z-index: 8;
 }
-body main .hero .heroTitleContainer .angebotsSatzOben a {
+body main .hero .heroTitleContainer .angebotsSatzOben .learn-more {
   margin: 4rem 0 2rem 0;
   position: relative;
   display: inline-block;
@@ -1105,49 +1105,10 @@ body main .hero .heroTitleContainer .angebotsSatzOben a {
   text-decoration: none;
   background: transparent;
   padding: 0;
-}
-body main .hero .heroTitleContainer .angebotsSatzOben a.learn-more {
   width: 20rem;
   height: auto;
 }
-body main .hero .heroTitleContainer .angebotsSatzOben a.learn-more .circle {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  position: relative;
-  display: block;
-  margin: 0;
-  width: 3rem;
-  height: 3rem;
-  background: #000000;
-  border-radius: 1.625rem;
-  border: 1px solid #E2E2E2;
-}
-body main .hero .heroTitleContainer .angebotsSatzOben a.learn-more .circle .icon {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  background: #fff;
-}
-body main .hero .heroTitleContainer .angebotsSatzOben a.learn-more .circle .icon.arrow {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-  left: 0.625rem;
-  width: 1.125rem;
-  height: 0.125rem;
-  background: none;
-}
-body main .hero .heroTitleContainer .angebotsSatzOben a.learn-more .circle .icon.arrow::before {
-  position: absolute;
-  content: "";
-  top: -0.29rem;
-  right: 0.0625rem;
-  width: 0.625rem;
-  height: 0.625rem;
-  border-top: 0.125rem solid #fff;
-  border-right: 0.125rem solid #fff;
-  transform: rotate(45deg);
-}
-body main .hero .heroTitleContainer .angebotsSatzOben a.learn-more .button-text {
+body main .hero .heroTitleContainer .angebotsSatzOben .learn-more .button-text {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
@@ -1163,14 +1124,51 @@ body main .hero .heroTitleContainer .angebotsSatzOben a.learn-more .button-text 
   font-size: 1.3rem;
   font-weight: 400;
 }
-body main .hero .heroTitleContainer .angebotsSatzOben a:hover .circle {
+body main .hero .heroTitleContainer .angebotsSatzOben .learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #000000;
+  border-radius: 1.625rem;
+  border: 1px solid #E2E2E2;
+}
+body main .hero .heroTitleContainer .angebotsSatzOben .learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+body main .hero .heroTitleContainer .angebotsSatzOben .learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+body main .hero .heroTitleContainer .angebotsSatzOben .learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+body main .hero .heroTitleContainer .angebotsSatzOben .learn-more:hover .circle {
   width: 100%;
 }
-body main .hero .heroTitleContainer .angebotsSatzOben a:hover .circle .icon.arrow {
+body main .hero .heroTitleContainer .angebotsSatzOben .learn-more:hover .circle .icon.arrow {
   background: #E2E2E2;
   transform: translate(1rem, 0);
 }
-body main .hero .heroTitleContainer .angebotsSatzOben a:hover .button-text {
+body main .hero .heroTitleContainer .angebotsSatzOben .learn-more:hover .button-text {
   color: #E2E2E2;
 }
 body main .hero .heroTitleContainer .angebotsSatzOben .titleHighlight {
