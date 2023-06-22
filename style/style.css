@@ -92,6 +92,7 @@ header {
   -webkit-backdrop-filter: blur(12px);
   -moz-backdrop-filter: blur(12px);
   background-color: rgba(245, 245, 245, 0.4941176471);
+  max-height: 100px;
 }
 header .navBar {
   max-width: 1100px;
@@ -111,7 +112,7 @@ header .navBar {
   }
 }
 header .navBar .logo {
-  max-width: 90px !important;
+  width: 90px;
 }
 header .navBar .logo img {
   width: 100%;
