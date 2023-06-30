@@ -450,7 +450,7 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   padding-top: 0.8rem;
 }
 .referencPage .referencMenu .displayReference article .referencCard .referencText span {
-  background-color: #000000;
+  background-color: rgb(129, 128, 128);
   color: #E2E2E2;
   letter-spacing: 0.2rem;
   padding-left: 0.5rem;

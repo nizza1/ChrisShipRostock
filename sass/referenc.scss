@@ -2,7 +2,7 @@
 @use 'mixin' as * ;
 @use 'stylingMix' as * ;
 
-
+$darkTextColor : rgb(129, 128, 128);
 .referecePageBackround {
     position: relative;
     background-image: url('../img/referenceBackground-min.jpg');
@@ -105,7 +105,7 @@
                             padding-top: .8rem;
                            
                             span {
-                                background-color: $primary-color;
+                                background-color: $darkTextColor;
                                 color: $primary-background;
                                 letter-spacing: .2rem;
                                 padding-left: .5rem;
