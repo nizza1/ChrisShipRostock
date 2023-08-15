@@ -112,7 +112,8 @@ header .navBar {
   }
 }
 header .navBar .logo {
-  width: 90px;
+  padding: 0.6rem 0;
+  width: 70px;
 }
 header .navBar .logo img {
   width: 100%;
@@ -412,7 +413,7 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   height: 2px;
   border-radius: 1rem;
   width: 100%;
-  background-color: #002AFF;
+  background-color: #479DD7;
 }
 .referencPage .referencMenu .radio-inputs .radio .name {
   letter-spacing: 0.1rem;
@@ -1249,7 +1250,7 @@ body main .infosSContainer .infosS div .iconForInfos:after {
   background-color: #000000;
   z-index: 1;
   border-radius: 50%;
-  background-color: #002AFF;
+  background-color: #479DD7;
 }
 body main .infosSContainer .infosS div p {
   font-size: 1.5rem;
@@ -1262,7 +1263,7 @@ body main .infosSContainer .infosS div p {
 }
 body main .outFull {
   width: 100vw;
-  background-color: #000000;
+  background-color: #232323;
   padding: 4rem 0;
 }
 body main .outFull .imageTextOutContainer {
@@ -1295,7 +1296,7 @@ body main .outFull .imageTextOutContainer .iconsContainerHomeLeistung .iconsText
   padding-bottom: 1rem;
 }
 body main .outFull .imageTextOutContainer .iconsContainerHomeLeistung .iconsTextContainer div .iconsLeistungen .iconL {
-  background-color: #002AFF;
+  background-color: #479DD7;
   width: 50px;
   padding: 5px;
 }
