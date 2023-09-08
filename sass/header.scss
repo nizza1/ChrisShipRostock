@@ -132,6 +132,13 @@ header {
                 cursor:pointer;
                 padding-left: 0;
             }
+            .languages-container {
+               padding: 1rem 0;
+               align-self: end;
+            }
+            .languages-container a:hover {
+                padding-left: 0;
+            }
            }
         /*    .linksContainerMenu:after {
             position: absolute;

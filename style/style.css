@@ -230,6 +230,13 @@ header .navBar .menuContainr .menu .linksContainerMenu a:last-child {
   cursor: pointer;
   padding-left: 0;
 }
+header .navBar .menuContainr .menu .linksContainerMenu .languages-container {
+  padding: 1rem 0;
+  align-self: end;
+}
+header .navBar .menuContainr .menu .linksContainerMenu .languages-container a:hover {
+  padding-left: 0;
+}
 header .navBar .menuContainerOpen {
   transform: translateX(0);
 }
