@@ -162,55 +162,38 @@ radios.forEach(radio => {
 
 //referencPage 
 
-//animation About Page 
 
+
+//animation About Page
 function animateOnScroll() {
   const items = document.querySelectorAll('.uberUnsPage .activeTime');
-
   const texte = document.querySelectorAll('.uberUnsPage .animatedItmes');
 
   function checkScroll() {
-
-
-    items.forEach((item) => {
+    items.forEach((item, index) => {
       const itemTop = item.getBoundingClientRect().top;
+      const textTop = texte[index].getBoundingClientRect().top;
 
-      // Check if the box is in the viewport
-      if (itemTop < window.innerHeight - 280) {
+      // Check if the item or text is in the viewport
+      if (itemTop < window.innerHeight - 380) {
         item.style.opacity = '1';
         item.style.transform = 'translateY(0)';
         item.style.left = '0';
         item.style.width = '30px';
-
-      /*   item.style.color = '#002AFF'; */
+        texte[index].classList.add('animatedText');
       } else {
         item.style.opacity = '0';
         item.style.transform = 'translateY(120px)';
         item.style.left = '15px';
         item.style.width = '0';
+        texte[index].classList.remove('animatedText');
       }
     });
   }
 
-  function changeTextColor() {
-    texte.forEach((text) => {
-      const textTop = text.getBoundingClientRect().top;
-
-      if (textTop < window.innerHeight - 400) {
-        text.classList.add('animatedText')
-      } else {
-        text.classList.remove('animatedText')
-      }
-
-    })
-  }
   checkScroll();
   window.addEventListener('scroll', checkScroll);
-
-  changeTextColor();
-  window.addEventListener('scroll', changeTextColor);
 }
 
 animateOnScroll();
-
-//animation About Page
+//animation About Page 
