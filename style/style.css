@@ -83,15 +83,10 @@
   } */
 header {
   margin-bottom: -5rem;
-  border-bottom: 1px solid #000000;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 100;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  -moz-backdrop-filter: blur(12px);
-  background-color: rgba(245, 245, 245, 0.7490196078);
   max-height: 100px;
 }
 header .navBar {
@@ -125,9 +120,11 @@ header .navBar .nav {
 }
 header .navBar .nav .navButton {
   border: none;
-  width: 2.4rem;
-  background-color: rgba(0, 0, 0, 0);
-  height: 3rem;
+  width: 3.6rem;
+  background-color: rgba(255, 255, 255, 0.3254901961);
+  border-radius: 50%;
+  padding: 0.6rem;
+  height: 3.6rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,7 +132,7 @@ header .navBar .nav .navButton {
 header .navBar .nav .navButton .line {
   width: 100%;
   border-radius: 10px;
-  height: 1px;
+  height: 3px;
   background-color: #000000;
   position: relative;
   transition-duration: 0.3s;
@@ -188,18 +185,6 @@ header .navBar .menuContainr .menu {
   row-gap: 1rem;
   display: flex;
   justify-content: end;
-  /*    .linksContainerMenu:after {
-      position: absolute;
-      content: "";
-      background-image: url('../icons/arrow-right.svg');
-      background-size: contain;
-      width: 50px;
-      height: 50px;
-      bottom: 2rem;
-      left: 1rem;
-      transform: translateY(-50%);
-      transform: rotate(-45deg);
-     } */
 }
 header .navBar .menuContainr .menu .linksContainerMenu {
   background-color: #000;
@@ -1311,10 +1296,14 @@ body main .outFull .imageTextOutContainer .iconsContainerHomeLeistung .iconsText
   width: 50px;
   padding: 5px;
 }
-body main .outFull .imageTextOutContainer .iconsContainerHomeLeistung .iconsTextContainer div .iconsLeistungen p {
+body main .outFull .imageTextOutContainer .iconsContainerHomeLeistung .iconsTextContainer div .iconsLeistungen a {
   font-size: 1.5rem;
   font-weight: 200;
   color: #E2E2E2;
+  text-decoration: none;
+}
+body main .outFull .imageTextOutContainer .iconsContainerHomeLeistung .iconsTextContainer div .iconsLeistungen a:hover {
+  color: #479DD7;
 }
 body main .blogHome {
   min-height: 400px;

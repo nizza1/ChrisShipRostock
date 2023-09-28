@@ -196,8 +196,12 @@ body {
                                      width: 50px;
                                      padding: 5px;
                                  }
-                                 p {
+                                 a {
                                      @include standardText($primary-background);
+                                     text-decoration: none;
+                                 }
+                                 a:hover {
+                                    color: $color-highlight;
                                  }
          
                              }
