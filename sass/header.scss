@@ -4,12 +4,13 @@
 //import Variable & Mixin
 
 header {
-    margin-bottom: -5rem;
+   /*  margin-bottom: -5rem; */
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
     max-height: 100px;
+    pointer-events: none;
     .navBar {
         max-width: $max-width;
         margin-inline: auto;
@@ -17,23 +18,24 @@ header {
         @media (max-width: $max-width) {
             padding-inline: 1.2rem;
           }
-        .logo {
-            padding: .2rem 0;
-            width: 95px ;
-            img {
-               width: 100%;
           
-            }
-        }
        
         .nav{
-            max-width: $max-width;
-            position: reletive;
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        padding: .6rem 0;
+       
         .navButton {
+            cursor: pointer;
+            pointer-events: auto;
             border: none;
             width: 3.6rem;
-            background-color: #ffffff53;
-            border-radius: 50%;
+            background-color: #ffffff2a;
+            backdrop-filter: blur(.5rem);
+            -webkit-backdrop-filter: blur(.5rem);
+            -moz-backdrop-filter: blur(.5rem);
+           /*  border-radius: 50%; */
             padding: .6rem;
             height: 3.6rem;
             @include flexCenter();
@@ -85,6 +87,7 @@ header {
     }
 
     .menuContainr{
+           pointer-events: auto;
             width: 100%;
             position: absolute;
             top: 100%;

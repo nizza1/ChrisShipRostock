@@ -82,12 +82,13 @@
     }
   } */
 header {
-  margin-bottom: -5rem;
+  /*  margin-bottom: -5rem; */
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 100;
   max-height: 100px;
+  pointer-events: none;
 }
 header .navBar {
   max-width: 1100px;
@@ -106,23 +107,23 @@ header .navBar {
     padding-inline: 1.2rem;
   }
 }
-header .navBar .logo {
-  padding: 0.2rem 0;
-  width: 95px;
-}
-header .navBar .logo img {
-  width: 100%;
-}
 header .navBar .nav {
-  max-width: 1100px;
-  position: reletive;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding: 0.6rem 0;
   /* navutton animation */
 }
 header .navBar .nav .navButton {
+  cursor: pointer;
+  pointer-events: auto;
   border: none;
   width: 3.6rem;
-  background-color: rgba(255, 255, 255, 0.3254901961);
-  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1647058824);
+  backdrop-filter: blur(0.5rem);
+  -webkit-backdrop-filter: blur(0.5rem);
+  -moz-backdrop-filter: blur(0.5rem);
+  /*  border-radius: 50%; */
   padding: 0.6rem;
   height: 3.6rem;
   display: flex;
@@ -170,6 +171,7 @@ header .navBar .nav .navButton.open .line::after {
   left: 30px;
 }
 header .navBar .menuContainr {
+  pointer-events: auto;
   width: 100%;
   position: absolute;
   top: 100%;
@@ -566,10 +568,10 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
 }
 
 .leistungenPage {
-  padding-top: 4rem;
+  padding-top: 8rem;
 }
 .leistungenPage article {
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
 }
 .leistungenPage article h1 {
   font-size: 3rem;
@@ -635,8 +637,8 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
 }
 
 .kontaktPage {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 .kontaktPage .contactDetails {
   display: flex;
@@ -661,7 +663,7 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   border-top: 1px solid #000000;
   border-bottom: 1px solid #000000;
   margin-bottom: 4rem;
-  padding: 4rem 0;
+  padding: 8rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -827,8 +829,8 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
 }
 
 .uberUnsPage {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
   display: grid;
   grid-template-columns: 1fr 3fr;
   row-gap: 6rem;
@@ -1063,6 +1065,24 @@ body {
   position: relative;
   overflow-x: hidden;
 }
+body main {
+  position: relative;
+}
+body main .logo {
+  position: absolute;
+  padding: 0.6rem;
+  top: 0;
+  width: 100%;
+  z-index: 6;
+}
+body main .logo .imgContainerl {
+  padding: 0 0.6rem;
+  max-width: 1100px;
+  margin-inline: auto;
+}
+body main .logo .imgContainerl img {
+  width: 95px;
+}
 body main .hero {
   overflow-y: hidden;
   padding-bottom: 2rem;
@@ -1218,7 +1238,7 @@ body main .infosSContainer .infosS {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap-reverse;
-  row-gap: 4rem;
+  row-gap: 8rem;
   column-gap: 3rem;
 }
 body main .infosSContainer .infosS div {
@@ -1265,7 +1285,7 @@ body main .infosSContainer .infosS div p {
 body main .outFull {
   width: 100vw;
   background-color: #232323;
-  padding: 4rem 0;
+  padding: 8rem 0;
 }
 body main .outFull .imageTextOutContainer {
   display: flex;

@@ -43,6 +43,23 @@ body {
 
 
     main {
+        position: relative;
+
+        .logo {
+            position: absolute;
+            padding: .6rem ;
+            top: 0;
+            width: 100% ;
+            z-index: 6;
+            .imgContainerl {
+                padding: 0 .6rem;
+                max-width: $max-width;
+                margin-inline: auto;
+                img {
+                    width: 95px;
+                 }
+            }
+        }
 
         .hero {
             overflow-y: hidden;
