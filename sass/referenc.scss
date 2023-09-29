@@ -31,19 +31,15 @@ $darkTextColor : rgb(129, 128, 128);
     position: relative;
     .referencMenu {
             .radio-inputs {
-                z-index: 5;
-                /* border-bottom: 1px solid $primary-color; */
+                z-index: 99;
                 position: sticky;
-                top: 70px;
+                top: 0px;
                 flex-wrap: wrap;
                 display: flex;
                 background-color: $primary-background;
-             
                 gap: 1rem;
                 padding: .5rem;
-                .radio:last-of-type {
-          
-                }
+               
                 .radio {
                     flex: 1 1 auto;
                     text-align: center;
@@ -187,3 +183,19 @@ $darkTextColor : rgb(129, 128, 128);
             }
     }
 }
+
+@media (max-width: 600px) {
+    /* .radio-inputs {
+      flex-direction: row-reverse;
+    } */
+    .radio:nth-child(2) , .radio:nth-child(1) {
+
+        min-width: 40%;
+    }
+    .radio {
+        .name {
+            justify-content: start !important;
+        }
+    }
+
+  }

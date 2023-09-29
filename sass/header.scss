@@ -12,7 +12,7 @@ header {
     max-height: 100px;
     pointer-events: none;
     .navBar {
-        max-width: $max-width;
+        max-width: calc($max-width + 200px);
         margin-inline: auto;
         @include flex(1, row, space-between, center, nowrap);
         @media (max-width: $max-width) {
@@ -87,6 +87,7 @@ header {
     }
 
     .menuContainr{
+          
            pointer-events: auto;
             width: 100%;
             position: absolute;
@@ -97,6 +98,7 @@ header {
             animation-timing-function: ease-out;
             transform: translateX(100%);
         .menu {
+          
             margin-inline: auto;
             max-width: $max-width;
             row-gap: 1rem;
@@ -161,6 +163,7 @@ header {
 
     .menuContainerOpen {
         transform: translateX(0);
+    
     }
         /* nav */ 
         

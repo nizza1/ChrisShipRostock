@@ -175,7 +175,7 @@ function animateOnScroll() {
       const textTop = texte[index].getBoundingClientRect().top;
 
       // Check if the item or text is in the viewport
-      if (itemTop < window.innerHeight - 380) {
+      if (itemTop < window.innerHeight - 480) {
         item.style.opacity = '1';
         item.style.transform = 'translateY(0)';
         item.style.left = '0';
