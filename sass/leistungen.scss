@@ -9,11 +9,25 @@
       background-size: cover;
       background-position: center;
       background-attachment: scroll;
-      min-height: 400px;
+      min-height: 500px;
       display: flex;
       align-items: center;
-      padding-top: 4rem;
+    /*   padding-top: 4rem; */
       position: relative;
+      .video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+      }
+
+      .video::-webkit-media-controls-timeline {
+        display: none;
+      }
+      
+      .video::-webkit-media-controls-current-time-display {
+        display: none;
+      }
       div {
           border-top: 1px solid $primary-background;
           width: 100%;
@@ -24,17 +38,12 @@
           }
       }
     }
-    .backdrop {
-/*         position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left:0;
-        background: linear-gradient(180deg, rgba(250,251,255,0) 0%, rgba(0,0,0,0.5914959733893557) 62%); */
+  /*   .backdrop {
+
 
         @include overlay;
         z-index: 2;
-    }
+    } */
 
     .leistungenPage {
         padding-top: $spacing-larg ;
