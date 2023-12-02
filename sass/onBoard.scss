@@ -1,0 +1,49 @@
+.onOutContainer {
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .onboardingContainer {
+        max-width: 600px ;
+      
+        padding: 1.2rem 1.4rem ;
+        display: flex ;
+        flex-direction: column;
+        row-gap: 1rem;
+        .onLogoContainer {
+            border: 25px solid black;
+            width: 550px;
+            height: 550px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .onLogoC {
+                padding: 2rem;
+    
+                .onLogo {
+                    cursor: pointer;
+                    max-width: 100%;
+                    border-right: 30px solid black;
+                    filter: grayscale(1);
+                }
+            }
+        }
+        .onText {
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        .onLinksContainer {
+            display: flex;
+            justify-content: center;
+            column-gap: .3rem;
+            font-size: 1.8rem;
+            a {
+               text-decoration: none;
+            }
+        }
+    }
+}
