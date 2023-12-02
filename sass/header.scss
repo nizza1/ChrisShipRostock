@@ -11,8 +11,24 @@ header {
     z-index: 100;
     max-height: 100px;
     pointer-events: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     .navBar {
-        max-width: calc($max-width + 200px);
+        .logo {
+            max-width: 120px;
+           pointer-events: visible;
+                img {
+                    width: 100%;
+                }
+           
+        }
+    }
+
+
+    .navBar {
+        max-width: calc($max-width + 300px);
         margin-inline: auto;
         @include flex(1, row, space-between, center, nowrap);
         @media (max-width: $max-width) {

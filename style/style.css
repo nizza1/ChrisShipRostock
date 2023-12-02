@@ -89,9 +89,19 @@ header {
   z-index: 100;
   max-height: 100px;
   pointer-events: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .navBar .logo {
+  max-width: 120px;
+  pointer-events: visible;
+}
+header .navBar .logo img {
+  width: 100%;
 }
 header .navBar {
-  max-width: 1400px;
+  max-width: 1500px;
   margin-inline: auto;
   display: flex;
   flex: 1;
@@ -894,6 +904,7 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #FFFFFF;
 }
 .onOutContainer .onboardingContainer {
   max-width: 600px;
@@ -903,7 +914,8 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   row-gap: 1rem;
 }
 .onOutContainer .onboardingContainer .onLogoContainer {
-  border: 25px solid black;
+  /* border: 25px solid black; */
+  border: 25px solid #04ADEF;
   width: 550px;
   height: 550px;
   display: flex;
@@ -916,8 +928,10 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
 .onOutContainer .onboardingContainer .onLogoContainer .onLogoC .onLogo {
   cursor: pointer;
   max-width: 100%;
-  border-right: 30px solid black;
-  filter: grayscale(1);
+  /* border-right: 30px solid black; */
+  border-top: 25px solid #04ADEF;
+  padding-top: 15px;
+  /*  filter: grayscale(1); */
 }
 .onOutContainer .onboardingContainer .onText {
   text-align: center;

@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    background-color: #FFFFFF;
     .onboardingContainer {
         max-width: 600px ;
       
@@ -14,7 +14,9 @@
         flex-direction: column;
         row-gap: 1rem;
         .onLogoContainer {
-            border: 25px solid black;
+            /* border: 25px solid black; */
+            
+            border: 25px solid #04ADEF;
             width: 550px;
             height: 550px;
 
@@ -27,8 +29,11 @@
                 .onLogo {
                     cursor: pointer;
                     max-width: 100%;
-                    border-right: 30px solid black;
-                    filter: grayscale(1);
+                    /* border-right: 30px solid black; */
+                    border-top: 25px solid #04ADEF;
+                    padding-top: 15px;
+                    
+                   /*  filter: grayscale(1); */
                 }
             }
         }
