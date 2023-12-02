@@ -947,6 +947,27 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   text-decoration: none;
 }
 
+@media (max-width: 800px) {
+  .onOutContainer .onboardingContainer {
+    width: 80%;
+  }
+  .onOutContainer .onboardingContainer .onLogoContainer {
+    width: 100%;
+    height: fit-content;
+  }
+  .onOutContainer .onboardingContainer .onLogoContainer .onLogoC {
+    padding: 2rem;
+  }
+  .onOutContainer .onboardingContainer .onLogoContainer .onLogoC .onLogo {
+    /*  filter: grayscale(1); */
+  }
+  .onOutContainer .onboardingContainer .onText {
+    font-size: 1.1rem;
+  }
+  .onOutContainer .onboardingContainer .onLinksContainer {
+    font-size: 1.5rem;
+  }
+}
 @media (max-width: 835px) {
   .contactForm {
     grid-template-columns: 1fr;

@@ -52,3 +52,38 @@
         }
     }
 }
+
+@media (max-width: 800px) {
+    .onOutContainer {
+        .onboardingContainer {
+   
+            width: 80%;
+
+            .onLogoContainer {
+            
+                width: 100%;
+                height: fit-content;
+
+                .onLogoC {
+                    padding: 2rem;
+        
+                    .onLogo {
+                     
+                        
+                       /*  filter: grayscale(1); */
+                    }
+                }
+            }
+
+            .onText {
+                font-size: 1.1rem;
+            }
+            .onLinksContainer {
+                font-size: 1.5rem;
+            }
+        }
+
+        
+    }
+    
+}
