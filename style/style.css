@@ -655,7 +655,7 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(250, 251, 255, 0) 0%, rgba(0, 0, 0, 0.654) 62%);
+  background: linear-gradient(180deg, rgba(250, 251, 255, 0) 0%, rgba(0, 0, 0, 0.524) 62%);
   z-index: 2;
 }
 
@@ -847,7 +847,7 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(250, 251, 255, 0) 0%, rgba(0, 0, 0, 0.654) 62%);
+  background: linear-gradient(180deg, rgba(250, 251, 255, 0) 0%, rgba(0, 0, 0, 0.524) 62%);
   z-index: 2;
 }
 
@@ -957,9 +957,6 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   }
   .onOutContainer .onboardingContainer .onLogoContainer .onLogoC {
     padding: 2rem;
-  }
-  .onOutContainer .onboardingContainer .onLogoContainer .onLogoC .onLogo {
-    /*  filter: grayscale(1); */
   }
   .onOutContainer .onboardingContainer .onText {
     font-size: 1.1rem;
@@ -1198,7 +1195,7 @@ body main .hero .overlay {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(250, 251, 255, 0) 0%, rgba(0, 0, 0, 0.654) 62%);
+  background: linear-gradient(180deg, rgba(250, 251, 255, 0) 0%, rgba(0, 0, 0, 0.524) 62%);
 }
 body main .hero .heroBlur {
   width: 100%;
