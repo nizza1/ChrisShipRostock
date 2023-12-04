@@ -21,7 +21,6 @@ min-height: 500px;
         h1 {
             @include titleXXL($primary-background);
             letter-spacing: .4rem;
-
         }
     }
 
@@ -92,27 +91,30 @@ min-height: 500px;
                         display: flex;
                         gap: 2rem;
                         align-items: center;
+                        margin: 2rem 0;
                         .referencText {
-                            border-top: 1px solid #000;
+                            border-top: 2px solid #2b2b2b;
                             max-width: 50%;
                             display: flex;
                             flex-direction: column;
                             height: 300px;
                             padding-top: .8rem;
+                         
                            
                             span {
-                                background-color: $darkTextColor;
-                                color: $primary-background;
-                                letter-spacing: .2rem;
-                                padding-left: .5rem;
-                                padding: .3rem .5rem .3rem .5rem;
-                                margin-right: .5rem;
+                            
+                               /*  margin-right: .5rem;
+                                font-weight: 400; */
+                                display: none;
                             }
                             p {
                                 margin: .5rem 0;
                                 line-height: 1.6rem;
                                 font-size: 1.5rem;
                                 line-height: 2rem;
+                            }
+                            p:nth-of-type(2) , p:nth-of-type(3) {
+                                display: none;
                             }
                         }
                 
@@ -123,9 +125,9 @@ min-height: 500px;
                             position: relative;
                             overflow: hidden;
                             border-radius: 2rem;
-                            margin: 2rem 0;
+                           
                             .imgSlider {
-                                column-gap: 0rem;
+                             
                                 width: 100%;
                                 height: 100%;
                                 display: flex;
@@ -136,12 +138,16 @@ min-height: 500px;
                                /*  scroll-padding-inline: 1rem; */
                                 scrollbar-width: none;
                                 overflow: -moz-scrollbars-none;
+                               
                                 img {
                                     /* aspect-ratio: 16/11; */
                                     flex: 1 0 100%;
                                     object-fit: cover;
                                     scroll-snap-align: start;
                                     width: 100%;
+                                    height: 100%;
+                                    background-color: red;
+                                 /*    height: 100%; */
                                 }
                             }
                             .imgSlider::-webkit-scrollbar {
@@ -176,8 +182,10 @@ min-height: 500px;
                         }
                     }
                 }
+                
                 article:first-of-type{
                     display: block;
+                  
                 }
 
             }

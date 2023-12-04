@@ -73,14 +73,14 @@ sliderContainers.forEach((sliderContainer) => {
       const scrollOffset = nextElement.offsetLeft - imgSlider.offsetLeft;
       imgSlider.scroll({
         left: scrollOffset,
-        /* behavior: 'smooth', */
+        behavior: 'smooth',
       });
-    } else {
+    }/*  else {
       imgSlider.scroll({
         left: 0,
         behavior: 'smooth',
       });
-    }
+    } */
   }
 
   function scrollToPreviousElement() {
@@ -119,8 +119,13 @@ sliderContainers.forEach((sliderContainer) => {
   function updatePrevButtonOpacity() {
     // Check if the first image is visible
     const isFirstImageVisible = getVisibleElement(imgSlider) === imgSlider.firstElementChild;
+    const isLastImageVisible = getVisibleElement(imgSlider) === imgSlider.lastElementChild;
     // Set the opacity of the previous button
     prevButton.style.opacity = isFirstImageVisible ? '0.1' : '0.7';
+
+   
+    // Set the opacity of the previous button
+    nextButton.style.opacity = isLastImageVisible ? '0.1' : '0.7';
   }
   function hideButtons(childrenCount) {
     if (childrenCount <= 1) {
