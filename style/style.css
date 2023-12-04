@@ -455,7 +455,7 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   gap: 2rem;
   align-items: center;
   margin: 2rem 0;
-  background-color: rgba(255, 255, 255, 0.478);
+  background-color: rgba(255, 255, 255, 0.254);
   border-radius: 2rem;
 }
 .referencPage .referencMenu .displayReference article .referencCard .referencText {
