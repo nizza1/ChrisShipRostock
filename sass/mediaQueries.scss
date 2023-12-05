@@ -5,7 +5,7 @@
 $media-max-medium : 665px ;
 $media-min-medium : 742px ;
 
-$media-max-small : 665px ;
+$media-max-small : 700px ;
 
 $cover-text-small : 3rem ;
 $cover-text-small-padding :1rem;
@@ -39,7 +39,7 @@ $font-size-title-home :2.5rem ;
     }
 }
 
-@media screen and (max-width: $media-max-small) {
+@media (max-width: $media-max-small) {
     //Home 
     .hero {
         background-image: url('../img/heroImg/dylan-mcleod-4zqvu9dyvSk-unsplash.jpg') !important;
@@ -139,6 +139,7 @@ $font-size-title-home :2.5rem ;
                         border-radius: 1.2rem;
                         display: grid;
                         grid-template-columns: 1fr;
+                
                         overflow-x: hidden;
                         width: 99%;
                         margin-inline: auto;
@@ -206,7 +207,9 @@ $font-size-title-home :2.5rem ;
             h2 {
                 font-size: 1.2rem;
             }
-           
+            .listContainer {
+
+            }
         }
     }
     //footer
@@ -240,20 +243,3 @@ $font-size-title-home :2.5rem ;
 
 
 }
-
-
-/* @media (min-width: $mq-desktop) {
-    :root {
-        --font-size-regular: 18px;
-        --gutter: 1.75rem;
-    }
-} */
-
-
-/* @media screen and (max-width: 1170px) {$base_width: 960px;}
-@media screen and (min-width: 1171px) {$base_width: 1160px;} */
-
-
-/* @media (min-width: 768px) and (max-width:){
-    
-} */
