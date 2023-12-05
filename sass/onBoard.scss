@@ -13,13 +13,13 @@
         display: flex ;
         flex-direction: column;
         row-gap: 1rem;
+        max-height: 100%;
         .onLogoContainer {
             /* border: 25px solid black; */
             
             border: 25px solid #04ADEF;
-            width: 550px;
-            height: 550px;
-
+            width: 100%;
+            height: 450px;
             display: flex;
             justify-content: center;
             align-items: center;
