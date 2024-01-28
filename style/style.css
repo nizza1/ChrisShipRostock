@@ -89,13 +89,19 @@ header {
   z-index: 100;
   max-height: 100px;
   pointer-events: none;
+  background-color: rgba(27, 27, 27, 0.65);
+  /* background-color: #232323; */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(2rem);
+  -moz-backdrop-filter: blur(2rem);
 }
 header .navBar .logo {
   max-width: 120px;
   pointer-events: visible;
+  padding: 0.6rem;
 }
 header .navBar .logo img {
   width: 100%;
@@ -129,10 +135,11 @@ header .navBar .nav .navButton {
   pointer-events: auto;
   border: none;
   width: 3.6rem;
-  background-color: rgba(255, 255, 255, 0.1647058824);
-  backdrop-filter: blur(0.5rem);
-  -webkit-backdrop-filter: blur(0.5rem);
-  -moz-backdrop-filter: blur(0.5rem);
+  /*  background-color: #fff; */
+  background-color: transparent;
+  /*  backdrop-filter: blur(.5rem);
+   -webkit-backdrop-filter: blur(.5rem);
+   -moz-backdrop-filter: blur(.5rem); */
   /*  border-radius: 50%; */
   padding: 0.6rem;
   height: 3.6rem;
@@ -144,7 +151,8 @@ header .navBar .nav .navButton .line {
   width: 100%;
   border-radius: 10px;
   height: 3px;
-  background-color: #000000;
+  /* background-color:$primary-color; */
+  background-color: #fff;
   position: relative;
   transition-duration: 0.3s;
   transition-timing-function: ease-out;
@@ -154,7 +162,8 @@ header .navBar .nav .navButton .line::after {
   width: 100%;
   border-radius: 5px;
   height: 100%;
-  background-color: #000000;
+  /* background-color: $primary-color; */
+  background-color: #fff;
   position: absolute;
   content: "";
   transition-duration: 0.3s;
