@@ -31,8 +31,8 @@ min-height: 500px;
     .referencMenu {
             .radio-inputs {
                 z-index: 99;
-                position: sticky;
-                top: 0px;
+             /*    position: sticky;
+                top: 0px; */
                 flex-wrap: wrap;
                 display: flex;
                 background-color: $primary-background;
@@ -43,6 +43,7 @@ min-height: 500px;
                     flex: 1 1 auto;
                     text-align: center;
                     color: $primary-color;
+                    justify-content: center;
               /*       border-right: $primery-border; */
                     input {
                         display: none;
@@ -199,14 +200,13 @@ min-height: 500px;
     /* .radio-inputs {
       flex-direction: row-reverse;
     } */
+    .radio-inputs {
+        text-align: center;
+    }
     .radio:nth-child(2) , .radio:nth-child(1) {
 
         min-width: 40%;
     }
-    .radio {
-        .name {
-            justify-content: start !important;
-        }
-    }
+ 
 
   }

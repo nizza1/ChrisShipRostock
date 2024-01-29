@@ -407,8 +407,8 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
 }
 .referencPage .referencMenu .radio-inputs {
   z-index: 99;
-  position: sticky;
-  top: 0px;
+  /*    position: sticky;
+     top: 0px; */
   flex-wrap: wrap;
   display: flex;
   background-color: #E2E2E2;
@@ -419,6 +419,7 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   flex: 1 1 auto;
   text-align: center;
   color: #000000;
+  justify-content: center;
   /*       border-right: $primery-border; */
 }
 .referencPage .referencMenu .radio-inputs .radio input {
@@ -555,11 +556,11 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   /* .radio-inputs {
     flex-direction: row-reverse;
   } */
+  .radio-inputs {
+    text-align: center;
+  }
   .radio:nth-child(2), .radio:nth-child(1) {
     min-width: 40%;
-  }
-  .radio .name {
-    justify-content: start !important;
   }
 }
 .LeistungenPageBackround {
