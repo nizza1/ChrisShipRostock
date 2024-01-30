@@ -1409,6 +1409,8 @@ body main .infosSContainer h1 {
   font-weight: 300;
   color: #000000;
   line-height: 1.5;
+  /*  background-color: red; */
+  min-width: 50%;
   /*  text-align: center; */
 }
 body main .infosSContainer h1 span {
@@ -1421,12 +1423,16 @@ body main .infosSContainer h1 span {
 body main .infosSContainer .infosS {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   row-gap: 8rem;
-  column-gap: 3rem;
+  column-gap: 2rem;
 }
 body main .infosSContainer .infosS div {
-  border-top: 1px solid #000000;
+  /* border-top: 3px solid $primary-color; */
+  border-top: 1px solid #232323;
+  border-radius: 0 0 1rem 1rem;
+  background-color: rgba(240, 248, 255, 0.322);
+  padding: 1.3rem 1rem;
   display: flex;
   flex-direction: column;
   width: 300px;
