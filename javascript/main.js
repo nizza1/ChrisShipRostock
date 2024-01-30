@@ -207,28 +207,28 @@ animateOnScroll();
 
 
 //carousel
-const carousel = document.querySelector('.carousel-inner');
+const carousel = Array.from(document.querySelectorAll('.carousel-inner'));
 const modalContent = document.querySelector('.modal-content');
-const imageSrcs = Array.from(carousel.querySelectorAll('img')).map(img => img.getAttribute('src'));
 
-
-carousel.addEventListener('click', (e) => {
-  console.log('carousel clicked');
+carousel.map((carouselItem ) => {
+  carouselItem.addEventListener('click', (e) => {
  
-    // Log the image srcs to the console
-    console.log('Image Srcs:', imageSrcs);
-  
-  
-  $('.bd-example-modal-lg').modal('toggle');
-  createCarousel();
-});
+    const imageSrcs = Array.from(carouselItem.querySelectorAll('img')).map(img => img.getAttribute('src'));
+   
+      // Log the image srcs to the console 
+    
+      $('.bd-example-modal-lg').modal('toggle');
+      createCarousel(imageSrcs);
+  });
+})
 
-function createCarousel() {
+
+function createCarousel(imageSrcs) {
   modalContent.innerHTML = `
 
-  <div id="carouselExampleIndicators" class="carousel slide carouselCoMo" data-ride="carousel">
+  <div id="carouselExampleIndicatorsModal" class="carousel slide carouselCoMo" data-ride="carousel">
 <ol class="carousel-indicators">
-  ${imageSrcs.map((_, index) => `<li data-target="#carouselExampleIndicators" data-slide-to="${index}"${index === 0 ? ' class="active"' : ''}></li>`).join('')}
+  ${imageSrcs.map((_, index) => `<li data-target="#carouselExampleIndicatorsModal" data-slide-to="${index}"${index === 0 ? ' class="active"' : ''}></li>`).join('')}
 </ol>
 <div class="carousel-inner">
   ${imageSrcs.map((image, index) => `
@@ -236,14 +236,18 @@ function createCarousel() {
       <img src="${image}" alt="">
     </div>`).join('')}
 </div>
-<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+
+${imageSrcs.length > 1 ? ` 
+<a class="carousel-control-prev" href="#carouselExampleIndicatorsModal" role="button" data-slide="prev">
   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
   <span class="sr-only">Previous</span>
 </a>
-<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+<a class="carousel-control-next" href="#carouselExampleIndicatorsModal" role="button" data-slide="next">
   <span class="carousel-control-next-icon" aria-hidden="true"></span>
   <span class="sr-only">Next</span>
 </a>
+` : ''}
+
 </div>
 
 
