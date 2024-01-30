@@ -123,6 +123,7 @@ min-height: 500px;
                               }
                           }
                       }
+
                     .referencCard {
                         display: flex;
                         gap: 2rem;
@@ -277,6 +278,43 @@ min-height: 500px;
 
         min-width: 40%;
     }
+
+    .carouselCo {
+        /*   background-color: red; */
+         /*  padding: 2rem; */
+        /*   max-width: 540px;
+          max-height: 430px; */
+         /*  padding: 1rem; */
+          overflow: hidden;
+          width: 100%;
+          height: 100%;
+          min-height: 300px;
+          min-width: 200px;
+          max-width: 90vw;
+          .carousel-inner:hover {
+            transform: scale(1.1);
+          }
+          .carousel-inner {
+            cursor: pointer;
+            transition-duration: .3s !important;
+            
+              .carousel-item {
+              /*  background-color: red;
+               padding: 1rem;
+               height: 100%; */
+
+                  img {
+                      object-fit: cover !important;
+                     /*  padding: 1rem; */
+                     
+                      width: 100%;
+                      height: 100%;
+                      background-color: green;
+                      aspect-ratio: 15/15;
+                  }
+              }
+          }
+      }
  
 
   }
