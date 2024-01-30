@@ -463,8 +463,9 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
 .referencPage .referencMenu .displayReference article .carouselCo {
   /*   background-color: red; */
   /*  padding: 2rem; */
-  max-width: 600px;
-  max-height: 400px;
+  max-width: 540px;
+  /*  height: 400px; */
+  max-height: 430px;
   overflow: hidden;
 }
 .referencPage .referencMenu .displayReference article .carouselCo .carousel-inner {
@@ -478,7 +479,7 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   width: 100%;
   height: 100%;
   background-color: green;
-  aspect-ratio: 16/10;
+  aspect-ratio: 17/12;
 }
 .referencPage .referencMenu .displayReference article .referencCard {
   display: flex;
@@ -487,6 +488,7 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   margin: 2rem 0;
   background-color: rgba(255, 255, 255, 0.254);
   border-radius: 2rem;
+  overflow: hidden;
 }
 .referencPage .referencMenu .displayReference article .referencCard .referencText {
   /*     border-top: 2px solid #5c5c5c; */
@@ -570,6 +572,34 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
 }
 .referencPage .referencMenu .displayReference article:first-of-type {
   display: block;
+}
+
+.modal-lg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.modal-lg .modal-content {
+  min-height: 50vh;
+  min-width: 70vw;
+  background-color: transparent;
+  border: none;
+}
+.modal-lg .modal-content .carouselCoMo {
+  height: 100%;
+}
+.modal-lg .modal-content .carouselCoMo .carousel-inner .carousel-item {
+  /*   overflow: hidden; */
+}
+.modal-lg .modal-content .carouselCoMo .carousel-inner .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /*   padding: 1rem ;
+    background-color: black; */
+  aspect-ratio: 17/12;
 }
 
 @media (max-width: 600px) {
