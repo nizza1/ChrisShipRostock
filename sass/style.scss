@@ -127,8 +127,9 @@ body {
             h1 {
                 @include titleLarg($primary-color);
                 line-height: 1.5;
-               /*  background-color: red; */
-                min-width: 50%;
+               /*  min-width: 50%; */
+
+                min-width: 100%;
                 
                 span {
                     @include titleMedium($primary-color);
@@ -157,6 +158,8 @@ body {
                     align-items: start;
                     justify-content: start;
                     padding-top: 3rem;
+
+                    width: 230px;
         
                     .iconForInfos {
                         position: relative;

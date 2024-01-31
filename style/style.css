@@ -1421,8 +1421,8 @@ body main .infosSContainer h1 {
   font-weight: 300;
   color: #000000;
   line-height: 1.5;
-  /*  background-color: red; */
-  min-width: 50%;
+  /*  min-width: 50%; */
+  min-width: 100%;
   /*  text-align: center; */
 }
 body main .infosSContainer h1 span {
@@ -1452,6 +1452,7 @@ body main .infosSContainer .infosS div {
   align-items: start;
   justify-content: start;
   padding-top: 3rem;
+  width: 230px;
 }
 body main .infosSContainer .infosS div .iconForInfos {
   position: relative;
