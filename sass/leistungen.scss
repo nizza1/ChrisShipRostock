@@ -19,6 +19,7 @@
         height: 100%;
         object-fit: cover;
         position: absolute;
+        pointer-events: none;
       }
 
       .video::-webkit-media-controls-timeline {

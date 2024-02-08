@@ -682,6 +682,7 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
   height: 100%;
   object-fit: cover;
   position: absolute;
+  pointer-events: none;
 }
 .LeistungenPageBackround .video::-webkit-media-controls-timeline {
   display: none;
