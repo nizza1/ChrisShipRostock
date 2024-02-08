@@ -325,6 +325,9 @@ footer article div .contactDataFooter li {
   padding-bottom: 0.5rem;
   color: #E2E2E2;
 }
+footer article div .contactDataFooter li:nth-of-type(3) {
+  display: none;
+}
 footer article div .contactDataFooter li:last-of-type {
   border-bottom: none;
 }
