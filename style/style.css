@@ -1453,6 +1453,7 @@ body main .infosSContainer .infosS div {
   justify-content: start;
   padding-top: 3rem;
   width: 230px;
+  max-width: 280px;
 }
 body main .infosSContainer .infosS div .iconForInfos {
   position: relative;
@@ -1482,6 +1483,7 @@ body main .infosSContainer .infosS div p {
   color: #000000;
   max-width: 20ch;
   max-width: 300px;
+  font-size: 1.3rem;
   /*  text-align: center; */
   z-index: 3;
 }

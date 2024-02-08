@@ -144,6 +144,7 @@ body {
                 flex-wrap: wrap;
                 row-gap: $spacing-larg;
                 column-gap: 2rem;
+              
                 div {
                     /* border-top: 3px solid $primary-color; */
                     border-top: 1px solid #232323;
@@ -159,8 +160,9 @@ body {
                     justify-content: start;
                     padding-top: 3rem;
 
-                    width: 230px;
-        
+                   width: 230px;
+                    max-width: 280px;
+                   
                     .iconForInfos {
                         position: relative;
                         z-index: 4;
@@ -179,6 +181,7 @@ body {
                         @include standardText($primary-color);
                         max-width: 20ch;
                         max-width: 300px;
+                        font-size: 1.3rem;
                        /*  text-align: center; */
                         z-index: 3;
                     }
