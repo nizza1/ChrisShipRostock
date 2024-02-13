@@ -261,6 +261,20 @@ footer {
   padding: 2rem 0;
   border-top: 1px solid #000000;
 }
+footer .outNua {
+  padding: 0 2rem;
+  margin-top: 1rem;
+}
+footer .outNua .nua {
+  padding: 1rem 2rem 1.6rem;
+  text-align: center;
+  border-top: 1px solid rgba(204, 204, 204, 0.3176470588);
+}
+footer .outNua .nua a {
+  color: #ccc;
+  text-decoration: none;
+  text-align: center;
+}
 footer article {
   max-width: 1200px;
   margin-inline: auto;
@@ -274,6 +288,15 @@ footer article {
   footer article {
     padding-inline: 1.2rem;
   }
+}
+footer article .logoFooterContainer {
+  padding: 2rem;
+}
+footer article .logoFooterContainer .logFooter {
+  max-width: 300px;
+}
+footer article .logoFooterContainer .logFooter img {
+  width: 100%;
 }
 footer article nav {
   display: flex;
@@ -1228,15 +1251,25 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
+    padding: 0 2rem;
+  }
+  footer article nav {
+    border-bottom: 1px solid rgba(204, 204, 204, 0.3176470588);
+    padding-bottom: 1rem;
+    width: 100%;
   }
   footer article nav .Links {
-    width: 100%;
+    margin-inline: auto;
     text-align: center;
     font-size: 1.2rem;
     margin-bottom: 0.3rem;
   }
+  footer article div {
+    width: 100%;
+  }
   footer article div ul li {
-    display: none;
+    text-align: center;
+    /*   display: none; */
   }
   footer article div ul li:last-of-type {
     display: block;

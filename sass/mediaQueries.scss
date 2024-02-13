@@ -218,18 +218,27 @@ $font-size-title-home :2.5rem ;
             display: grid;
             grid-template-columns: 1fr;
             justify-items: center;
+            padding: 0 2rem;
             nav {
-               .Links{
+                border-bottom: 1px solid #cccccc51;
+                padding-bottom: 1rem;
                 width: 100%;
+               .Links{
+                margin-inline: auto;
                 text-align: center;
                 font-size: 1.2rem ;
                 margin-bottom: .3rem;
                }
             }
             div {
+                
+                width: 100%;
                 ul {
+                   
                     li {
-                        display: none;
+                        text-align: center;
+                       
+                      /*   display: none; */
                     }
                     li:last-of-type{
                         display: block;

@@ -6,6 +6,25 @@ footer {
     background-color: #232323;
     padding: 2rem 0;
     border-top: 1px solid $primary-color;
+    .outNua {
+        padding: 0 2rem;
+        margin-top: 1rem;
+        .nua {
+    
+            padding: 1rem 2rem 1.6rem;
+            text-align: center;
+            border-top: 1px solid #cccccc51;
+            
+            a {
+              
+                color: #ccc;
+                text-decoration: none;
+                text-align: center;
+                
+            }
+        }
+    }
+   
     article {
         max-width: $max-width;
         @media (max-width: $max-width) {
@@ -17,6 +36,16 @@ footer {
         align-items: center;
         flex-wrap: wrap;
         gap: 2rem;
+        .logoFooterContainer {
+           padding: 2rem;
+            .logFooter {
+                max-width: 300px;
+               img {
+                width: 100%;
+               }
+            }
+          
+        }
         nav {
             display: flex;
             flex-direction: column;
