@@ -30,12 +30,9 @@ min-height: 500px;
 
   .kontaktPage {
     padding-top: $spacing-larg;
-    padding-bottom: $spacing-larg;
+  /*   padding-bottom: $spacing-larg; */
     .contactDetails {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        column-gap: 1rem;
+      
         div {
             display: flex;
             align-items: center;

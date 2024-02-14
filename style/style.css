@@ -802,13 +802,7 @@ footer article div .contactDataFooter li:last-of-type a:hover::after {
 
 .kontaktPage {
   padding-top: 8rem;
-  padding-bottom: 8rem;
-}
-.kontaktPage .contactDetails {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  column-gap: 1rem;
+  /*   padding-bottom: $spacing-larg; */
 }
 .kontaktPage .contactDetails div {
   display: flex;
